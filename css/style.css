@@ -1,110 +1,107 @@
-/*FONTES*/
 @import url(https://fonts.google.com/specimen/Bebas+Neue);
-
-/*AJUSTES GLOBAIS*/
-html, body{
-    margin: 0;
-    height: 100%;
+@font-face{
+    font-family: "Gotica Moderna KK";
+    src: url("Gotica Moderna KK v1.1.ttf");
 }
-
-main{
-    height: 60%;
-}
-
-/*HEADER*/
-.logo__header{
-    display: block;
-    margin: 20px auto 10px;
-    max-width: 20%;
-}
-.container__nav{
-    background-color: #252525;
-    padding: 5% 0;
-    margin: auto;
-    width: 97%;
-    border-radius: 20px;
-
-}
-.container__nav--sub{
-    margin: auto;
-    width: 80%;
-}
-.container__nav--searchbar{
-    margin-bottom: 10px;
-}
-.searchbar__header{
-    width: 80%;
-    border-radius: 20px;
-    border: none;
-}
-.searchbar__botao{
-    width:17%;
-    float: right;
-    border-radius: 20px;
-    border: none;
-}
-.container__nav--menu{
-    display: flex;
-    justify-content: center;
-}
-.header__menu--nav{
-    margin-right: 2%;
-    width: 60vw;
-}
-.header__link{
+li{
     display: inline-block;
-    text-decoration: none;
-    font-family: "bebas neue";
-    color: #fff;
-    font-size: 4vw;
-    border-right: 2px solid #1e479d;
-    padding-right: 5px;
-    margin-right: 0px;
-    letter-spacing: 1px;
+    margin: 0 10px;
+    border-right: 3px solid #1e479d;
+    padding-right: 20px;
 }
-
-.header__menu--icons{
-    margin-left: 10px;
-    max-width: 20vw;
+body{
+    margin: 0;
+}
+footer{
+    background-color:#252525;
+    height: 40vh;
+}
+.logo{
+    font-family: "Gotica Moderna KK";
+    font-size: 8em;
+}
+.searchbar{
+    max-width: 100%;
+    width: 100%;
+    max-height: 5vh;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+}
+.nav-links{
+    max-width: 100%;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+    transition: font-size 0.30s ease-in;
+    background-color: transparent;
+    border: none;
+    border-right: 3px solid #1e479d;
+    padding: 0 15px;
+}
+.link:hover{
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container-nav{
+    background-color: #252525;
+        padding: 20px;
+    border-radius: 20px;
+}
+.bebas{
+    font-family: "bebas neue";
+    font-size: 1.7em;
+    color: #fff;
 }
 .icon{
-    max-width: 4vw;
-}
-
-.lupa{
-    width: 9px;
-    margin-top: 3px;
-}
-
-/*MAIN- BANNER*/
-
-.banner{
-    margin: 20px auto;
-    width: 97%;
-    height: 30%;
-    background-image: url("banner.png");
-    background-size: 100%;
-    background-repeat:no-repeat;
-    border-radius: 20px;
-}
-
-/*FOOTER*/
-.footer__logo{
     max-width: 20%;
+    width: 20%;
 }
-
-/*MEDIA QUERY*/
-@media (max-width: 294px){
-    .header__menu--nav{
-        margin-right: 2%;
-        width: 70vw;
-    }
-    .header__menu--icons{
-        margin-left: 10px;
-        max-width: 30vw;
-    }
-    .container__nav--sub{
-        margin: auto;
-        width: 90%;
-    }
+.centro{
+    margin: 0 auto;
+}
+.div-banner{
+    max-width: 80%;
+    width: 80%;
+    margin-top: 20px;
+}
+.banner{
+    max-width: 100%;
+    width: 100%;
+}
+.botoes-slide{
+    width: 35%;
+}
+.botao-slide{
+    width: 25%;
+    height: 1vh;
+    margin: 0 5px 0 5px;
+    border: none;
+    background-color: #252525;
+    border-radius: 20px;
+    transition: width 0.30s ease;
+}
+.botao-slide:hover{
+    background-color:#1e479d;
+    width: 30%;
+}
+.botao-categoria{
+    width: 15%;
+    padding: 25px;
+    margin: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:#252525;
+    transition: font-size 0.30s ease-out;
+}
+.botao-categoria:hover{
+    font-size: 2em;
+    background-color:#1e479d;
+    color: #fff;
+}
+.cards-produtos{
+    padding: 80px 0px;
 }
