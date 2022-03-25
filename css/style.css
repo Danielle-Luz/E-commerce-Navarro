@@ -1,0 +1,110 @@
+/*FONTES*/
+@import url(https://fonts.google.com/specimen/Bebas+Neue);
+
+/*AJUSTES GLOBAIS*/
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+main{
+    height: 60%;
+}
+
+/*HEADER*/
+.logo__header{
+    display: block;
+    margin: 20px auto 10px;
+    max-width: 20%;
+}
+.container__nav{
+    background-color: #252525;
+    padding: 5% 0;
+    margin: auto;
+    width: 97%;
+    border-radius: 20px;
+
+}
+.container__nav--sub{
+    margin: auto;
+    width: 80%;
+}
+.container__nav--searchbar{
+    margin-bottom: 10px;
+}
+.searchbar__header{
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+}
+.searchbar__botao{
+    width:17%;
+    float: right;
+    border-radius: 20px;
+    border: none;
+}
+.container__nav--menu{
+    display: flex;
+    justify-content: center;
+}
+.header__menu--nav{
+    margin-right: 2%;
+    width: 60vw;
+}
+.header__link{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "bebas neue";
+    color: #fff;
+    font-size: 4vw;
+    border-right: 2px solid #1e479d;
+    padding-right: 5px;
+    margin-right: 0px;
+    letter-spacing: 1px;
+}
+
+.header__menu--icons{
+    margin-left: 10px;
+    max-width: 20vw;
+}
+.icon{
+    max-width: 4vw;
+}
+
+.lupa{
+    width: 9px;
+    margin-top: 3px;
+}
+
+/*MAIN- BANNER*/
+
+.banner{
+    margin: 20px auto;
+    width: 97%;
+    height: 30%;
+    background-image: url("banner.png");
+    background-size: 100%;
+    background-repeat:no-repeat;
+    border-radius: 20px;
+}
+
+/*FOOTER*/
+.footer__logo{
+    max-width: 20%;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 294px){
+    .header__menu--nav{
+        margin-right: 2%;
+        width: 70vw;
+    }
+    .header__menu--icons{
+        margin-left: 10px;
+        max-width: 30vw;
+    }
+    .container__nav--sub{
+        margin: auto;
+        width: 90%;
+    }
+}
