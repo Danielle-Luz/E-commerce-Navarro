@@ -9,32 +9,67 @@
         <link rel="stylesheet" href="css\style.css">
     </head>
     <body>
-        <div>
+        <!--MENU E LOGO-->
+        <header>
             <div class="logo text-center">navarro</div>
             <div class="row container-nav">
                 <forms class="col-lg-4">
                     <input class="searchbar" type="search" name="searchbar">
                 </forms>
                 <nav class="col-lg-6">
-                    <button class="link bebas fonte-menu menu-link">Feminino</button>
-                    <button class="link bebas fonte-menu menu-link">Masculino</button>
-                    <button class="link bebas fonte-menu menu-link">Não binário</button>
+                    <button id="b-fem" class="link bebas fonte-menu menu-link" data-menu="0">Feminino</button>
+                    <div id="m-fem" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Calças</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-masc" class="link bebas fonte-menu menu-link" data-menu="1">Masculino</button>
+                    <div id="m-masc" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Bermudas</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Calças</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-nb" class="link bebas fonte-menu menu-link" data-menu="2">Não binário</button>
+                    <div id="m-nb" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Calças</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
                 </nav>
                 <div class="col-lg-2 carrinho-lista">
+                    <a href="#"><img class="icon" src="img\user.png" alt="login"></a>
                     <a href="#"><img class="icon" src="img\icon-bag.png" alt="carrinho"></a>
                     <a href="#"><img class="icon" src="img\icon-lista.png" alt="lista de desejos"></a>
                 </div>
             </div>
+        </header>
+
+
+        <!--BANNER E CARDS-->
+        <main>
+            <!--BANNER-->
             <div class="container">
                 <div class="div-banner centro">
-                    <img class="img-fluid banner img-rounded" src="img\banner.png" alt="banner">
+                    <img id="banner" class="img-fluid banner img-rounded" src="img\banner.png" alt="banner">
                 </div>
             </div>
             <div class="botoes-slide centro">
                 <center>
-                    <button class="botao-slide" type="button"></button>
-                    <button class="botao-slide" type="button"></button>
-                    <button class="botao-slide" type="button"></button>
+                    <button id="b1-slide" class="botao-slide" type="button" data-n="0"></button>
+                    <button id="b2-slide" class="botao-slide" type="button" data-n="1"></button>
+                    <button id="b3-slide" class="botao-slide" type="button" data-n="2"></button>
                 </center>
             </div>
             <div>
@@ -45,36 +80,45 @@
                     <button class="botao-categoria bebas fonte-menu" type="button">saias</button>
                 </center>
             </div>
-           <div class="row cards-produtos">
-               <center>
-                <div class="card cartao col-lg-4">
-                    <img class="card-img-top" src="https://t-static.dafiti.com.br/6EMeDY0-k-4CK6LdMaNQkK3KLRQ=/fit-in/215x312/static.dafiti.com.br/p/adidas-originals-camiseta-cropped-adidas-originals-logo-preta%252fbranca-8377-90577401-2-product.jpg" alt="imagem de roupa">
-                    <div class="card-body">
-                        <h4 class="card-title">La Sain't</h6>
-                        <p class="card-text">Vestido La Sain't gala feminino</p>
-                        <p class="card-text">R$59,90</p>
+
+            <!--CARDS DE PRODUTO-->
+            <div class="row cards-produtos">
+                <center>
+                    <div class="card cartao col-lg-4">
+                        <img class="card-img-top"
+                            src="https://t-static.dafiti.com.br/6EMeDY0-k-4CK6LdMaNQkK3KLRQ=/fit-in/215x312/static.dafiti.com.br/p/adidas-originals-camiseta-cropped-adidas-originals-logo-preta%252fbranca-8377-90577401-2-product.jpg"
+                            alt="imagem de roupa">
+                        <div class="card-body">
+                            <p class="card-text">Conjunto Amelie casual feminino</p>
+                            <p class="card-text">R$59,90</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card cartao col-lg-4">
-                    <img class="card-img-top" src="https://t-static.dafiti.com.br/6iHsejf3ixp_UnDuSgHjh68nwK8=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-camiseta-lan%25c3%25a7a-perfume-logo-preta-1565-70696401-2-product.jpg" alt="imagem de roupa">
-                    <div class="card-body">
-                        <h4 class="card-title">La Sain't</h6>
-                        <p class="card-text">Vestido La Sain't gala feminino</p>
-                        <p class="card-text">R$59,90</p>
+                    <div class="card cartao col-lg-4">
+                        <img class="card-img-top"
+                            src="https://t-static.dafiti.com.br/6iHsejf3ixp_UnDuSgHjh68nwK8=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-camiseta-lan%25c3%25a7a-perfume-logo-preta-1565-70696401-2-product.jpg"
+                            alt="imagem de roupa">
+                        <div class="card-body">
+                            <p class="card-text">Saia La Sain't formal feminino</p>
+                            <p class="card-text">R$59,90</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card cartao col-lg-4">
-                    <img class="card-img-top" src="https://t-static.dafiti.com.br/Yiwi4sjOtzSXYwFJRWhQh_tBgs4=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-blusa-lan%25c3%25a7a-perfume-color-block-canelada-preta%252fbranca-7258-73243301-2-product.jpg" alt="imagem de roupa">
-                    <div class="card-body">
-                        <h4 class="card-title">La Sain't</h6>
-                        <p class="card-text">Vestido La Sain't gala feminino</p>
-                        <p class="card-text">R$59,90</p>
+                    <div class="card cartao col-lg-4">
+                        <img class="card-img-top"
+                            src="https://t-static.dafiti.com.br/Yiwi4sjOtzSXYwFJRWhQh_tBgs4=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-blusa-lan%25c3%25a7a-perfume-color-block-canelada-preta%252fbranca-7258-73243301-2-product.jpg"
+                            alt="imagem de roupa">
+                        <div class="card-body">
+                            <p class="card-text">Blusa Lemon casual feminino</p>
+                            <p class="card-text">R$59,90</p>
+                        </div>
                     </div>
-                </div>
-               </center>
+                </center>
             </div>
-        </div>
-        <footer>
+            </div>
+        </main>
+
+
+        <!--RODAPÉ-->
+        <footer class="rodape">
             <center>
                 <div class="container footer-div">
                     <h3 class="bebas titulo-ofertas">ofertas no e-mail</h3>
@@ -90,51 +134,58 @@
                     <div class="col-lg-2 footer-div-info">
                         <h3 class="footer-info-titulo">quem somos</h3>
                         <p>
-                            Com sede na Bahia,<br>a Navarro é uma empresa brasileira que se dedica a<br>trazer moda e roupas de qualidade<br>para todo o país.
+                            Com sede na Bahia,<br>a Navarro é uma empresa brasileira que se dedica a<br>trazer moda e roupas
+                            de qualidade<br>para todo o país.
                         </p>
                     </div>
                     <div class="col-lg-2 footer-div-info">
                         <h3 class="footer-info-titulo">Parceiros</h3>
-                        <ul>
-                        <li><a href="#">Shein</a></li>
-                            <li><a href="#">Renner</a></li>
-                            <li><a href="#">C&A</a></li>
-                            <li><a href="#">Esplanada</a></li>
-                            <li><a href="#">Marisa</a></li>
-                            <li><a href="#">Forever 21</a></li>
+                        <ul class="ul-padding-zero">
+                            <li><a href="https://br.shein.com/" target="_blank">Shein</a></li>
+                            <li><a href="https://www.zaful.com/" target="_blank">Zaful</a></li>
+                            <li><a href="https://www.bershka.com/" target="_blank">Bershka</a></li>
+                            <li><a href="https://www.zara.com/br/" target="_blank">Zara</a></li>
+                            <li><a href="https://www.prettylittlething.com/" target="_blank">Pretty Little Thing</a></li>
+                            <li><a href="https://www.forever21.com/" target="_blank">Forever 21</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 footer-div-info">
                         <h3 class="footer-info-titulo">Contato</h3>
                         <adress>
                             <div>
-                                <img src="img\pequena.png" style="display: inline; margin: 0 8px 0 5px">
-                                <p style="display: inline">Salvador, BA, 42833-000</p>
+                                <img class="inline footer-contato-icon" src="img\pequena.png">
+                                <p class="inline">Salvador, BA, 42833-000</p>
                             </div>
                             <div>
-                                <img src="img\email.png" style="display: inline; margin: 0 8px 0 5px">
-                                <p style="display: inline">navarro@gmail.com</p>
+                                <img class="inline footer-contato-icon" src="img\email.png">
+                                <a href="mailto:navarro@gmail.com" target="_blank" class="inline">navarro@gmail.com</a>
                             </div>
                             <div>
-                                <img src="img\phone.png" style="display: inline; margin: 0 8px 0 5px">
-                                <p style="display: inline">(71) 99878-5545</p>
+                                <img class="inline footer-contato-icon" src="img\phone.png">
+                                <a href="tel:7198865-9972" target="_blank" class="inline">(71)99878-5545</a>
                             </div>
                             <div>
-                                <img src="img\wpp.png" style="display: inline; margin: 0 8px 0 5px">
-                                <p style="display: inline">(71) 98865-9972 </p>
+                                <img class="inline footer-contato-icon" src="img\wpp.png">
+                                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=7198865-9972" target="_blank"
+                                    class="inline">(71)98865-9972 </a>
                             </div>
                         </adress>
                     </div>
                 </div>
                 <div class="div-footer-icons">
-                    <a href="#"><img class="footer-icon" src="img\insta.png" alt="instagram"></a>
-                    <a href="#"><img class="footer-icon" src="img\fb.png" alt="facebook"></a>
-                    <a href="#"><img class="footer-icon" src="img\local.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="footer-icon" src="img\insta.png"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="img\fb.png"
+                            alt="facebook"></a>
+                    <a href="https://goo.gl/maps/VtZ64DC5GRAuqfNh8" target="_blank"><img class="footer-icon"
+                            src="img\local.png" alt="twitter"></a>
                 </div>
             </center>
             <div class="div-copywright text-center">
                 <p>© 2021 Copyright: navarro.com</p>
             </div>
         </footer>
+        <script src="js\script.js">
+        </script>
     </body>
 </html>

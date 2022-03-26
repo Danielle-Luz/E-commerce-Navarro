@@ -1,20 +1,29 @@
+/*FONTES*/
 @import url(https://fonts.google.com/specimen/Bebas+Neue);
 @font-face{
     font-family: "Gotica Moderna KK";
     src: url("Gotica Moderna KK v1.1.ttf");
 }
+
+/*ALTERAÇÕES GLOBAIS*/
 body{
     margin: 0;
     overflow-x:hidden;
 }
-footer{
-    background-color:#252525;
-    height: 65vh;
-}
-a{
+
+a:hover, a:visited, a:link, a{
     text-decoration: none;
-    color:#fff;
+    color: inherit;
 }
+a:hover{
+    text-decoration: none;
+    color: #3d71e2;
+}
+input:focus{
+    border: none;
+}
+
+/*MENU*/
 .logo{
     font-family: "Gotica Moderna KK";
     font-size: 8em;
@@ -71,6 +80,28 @@ a{
 .centro{
     margin: 0 auto;
 }
+
+/*MENUS FLUTUANTES*/
+.div-table-menu{
+    box-shadow:0 0 20px black ;
+    display: none; 
+    background-color:white; 
+    width:65%; 
+    position: absolute; 
+    border-radius: 20px;
+}
+.table-menu{
+    width: 100%; 
+    margin: 5%;
+}
+.table-menu-cel{
+    padding: 10px; 
+    border-left: 3px solid #df9908; 
+    color:#1b1b1b; 
+    display: block;
+}
+
+/*BANNER*/
 .div-banner{
     max-width: 80%;
     width: 80%;
@@ -114,7 +145,10 @@ a{
     padding: 50px 0px;
 }
 
-
+/*RODAPÉ*/
+.rodape{
+    background-color:#252525;
+}
 .footer-div{
     width: 70%;
 }
@@ -125,6 +159,9 @@ a{
 .botao-ofertas{
     font-size: 1.3em;
     border-radius: 20px;
+}
+.botao-ofertas:hover{
+    opacity: 0.5;
 }
 .footer-input-text{
     width: 60%;
@@ -156,9 +193,19 @@ a{
 .div-footer-icons{
     margin-top:20px;
 }
+.ul-padding-zero{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.inline{
+    display: inline;
+}
+.footer-contato-icon{
+    margin: 0 8px 0 5px;
+}
 .div-copywright{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 5px;
     background-color: #1b1b1b;
 }
