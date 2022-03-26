@@ -3,23 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navarro</title>
+        <link rel="icon" type="image/x-icon" src="img\favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css\style.css">
     </head>
     <body>
-        <div <!--class="container"-->>
+        <div>
             <div class="logo text-center">navarro</div>
             <div class="row container-nav">
                 <forms class="col-lg-4">
                     <input class="searchbar" type="search" name="searchbar">
                 </forms>
-                <div class="col-lg-6">
-                    <ul class="nav-links btn-group">
-                        <button class="link bebas">Feminino</button>
-                        <button class="link bebas">Masculino</button>
-                        <button class="link bebas">Não binário</button>
-                    </ul>
-                </div>
+                <nav class="col-lg-6">
+                    <button class="link bebas fonte-menu menu-link">Feminino</button>
+                    <button class="link bebas fonte-menu menu-link">Masculino</button>
+                    <button class="link bebas fonte-menu menu-link">Não binário</button>
+                </nav>
                 <div class="col-lg-2 carrinho-lista">
                     <a href="#"><img class="icon" src="img\icon-bag.png" alt="carrinho"></a>
                     <a href="#"><img class="icon" src="img\icon-lista.png" alt="lista de desejos"></a>
@@ -39,10 +39,10 @@
             </div>
             <div>
                 <center>
-                    <button class="botao-categoria bebas" type="button">blusas</button>
-                    <button class="botao-categoria bebas" type="button">calças</button>
-                    <button class="botao-categoria bebas" type="button">vestidos</button>
-                    <button class="botao-categoria bebas" type="button">saias</button>
+                    <button class="botao-categoria bebas fonte-menu" type="button">blusas</button>
+                    <button class="botao-categoria bebas fonte-menu" type="button">calças</button>
+                    <button class="botao-categoria bebas fonte-menu" type="button">vestidos</button>
+                    <button class="botao-categoria bebas fonte-menu" type="button">saias</button>
                 </center>
             </div>
            <div class="row cards-produtos">
@@ -75,7 +75,66 @@
             </div>
         </div>
         <footer>
-
+            <center>
+                <div class="container footer-div">
+                    <h3 class="bebas titulo-ofertas">ofertas no e-mail</h3>
+                    <forms>
+                        <input class="input-altura footer-input-text forms-background" type="email" name="inscrição">
+                        <button class="bebas botao-ofertas forms-background" type="button">Inscreva-se</button>
+                    </forms>
+                </div>
+            </center>
+            <center>
+                <div class="row centro">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">quem somos</h3>
+                        <p>
+                            Com sede na Bahia,<br>a Navarro é uma empresa brasileira que se dedica a<br>trazer moda e roupas de qualidade<br>para todo o país.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Parceiros</h3>
+                        <ul>
+                        <li><a href="#">Shein</a></li>
+                            <li><a href="#">Renner</a></li>
+                            <li><a href="#">C&A</a></li>
+                            <li><a href="#">Esplanada</a></li>
+                            <li><a href="#">Marisa</a></li>
+                            <li><a href="#">Forever 21</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Contato</h3>
+                        <adress>
+                            <div>
+                                <img src="img\pequena.png" style="display: inline; margin: 0 8px 0 5px">
+                                <p style="display: inline">Salvador, BA, 42833-000</p>
+                            </div>
+                            <div>
+                                <img src="img\email.png" style="display: inline; margin: 0 8px 0 5px">
+                                <p style="display: inline">navarro@gmail.com</p>
+                            </div>
+                            <div>
+                                <img src="img\phone.png" style="display: inline; margin: 0 8px 0 5px">
+                                <p style="display: inline">(71) 99878-5545</p>
+                            </div>
+                            <div>
+                                <img src="img\wpp.png" style="display: inline; margin: 0 8px 0 5px">
+                                <p style="display: inline">(71) 98865-9972 </p>
+                            </div>
+                        </adress>
+                    </div>
+                </div>
+                <div class="div-footer-icons">
+                    <a href="#"><img class="footer-icon" src="img\insta.png" alt="instagram"></a>
+                    <a href="#"><img class="footer-icon" src="img\fb.png" alt="facebook"></a>
+                    <a href="#"><img class="footer-icon" src="img\local.png" alt="twitter"></a>
+                </div>
+            </center>
+            <div class="div-copywright text-center">
+                <p>© 2021 Copyright: navarro.com</p>
+            </div>
         </footer>
     </body>
 </html>

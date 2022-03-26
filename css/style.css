@@ -3,22 +3,28 @@
     font-family: "Gotica Moderna KK";
     src: url("Gotica Moderna KK v1.1.ttf");
 }
-li{
-    display: inline-block;
-    margin: 0 10px;
-    border-right: 3px solid #1e479d;
-    padding-right: 20px;
-}
 body{
     margin: 0;
+    overflow-x:hidden;
 }
 footer{
     background-color:#252525;
-    height: 40vh;
+    height: 65vh;
+}
+a{
+    text-decoration: none;
+    color:#fff;
 }
 .logo{
     font-family: "Gotica Moderna KK";
     font-size: 8em;
+}
+.menu-link{
+    display: inline-block;
+    margin: 0 10px;
+    border-right: 3px solid #1e479d;
+    padding-right: 20px;
+    
 }
 .searchbar{
     max-width: 100%;
@@ -53,6 +59,8 @@ footer{
 }
 .bebas{
     font-family: "bebas neue";
+}
+.fonte-menu{
     font-size: 1.7em;
     color: #fff;
 }
@@ -103,5 +111,58 @@ footer{
     color: #fff;
 }
 .cards-produtos{
-    padding: 80px 0px;
+    padding: 50px 0px;
 }
+
+
+.footer-div{
+    width: 70%;
+}
+.titulo-ofertas{
+    font-size: 2.5em;
+    color: #fff;
+}
+.botao-ofertas{
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+.footer-input-text{
+    width: 60%;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    height: 2.4em;
+    border-radius: 20px;
+}
+.forms-background{
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+}
+.footer-div-info{
+    border-left: 3px solid #df9908;
+    padding: 0px 10px;
+    text-align: left;
+    color: white;
+    margin-left: 10px;
+}
+.footer-info-titulo{
+    font-family:"bebas neue";
+    color: white;
+    margin: 0 auto;
+}
+.footer-icon{
+    width: 3%;
+}
+.div-footer-icons{
+    margin-top:20px;
+}
+.div-copywright{
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: #1b1b1b;
+}
+.div-copywright p{
+    color: white;
+}
+
