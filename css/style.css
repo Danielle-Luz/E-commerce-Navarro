@@ -213,3 +213,10 @@ input:focus{
     color: white;
 }
 
+
+.bn{
+    background-image: url("https://i.imgur.com/INRmNwZ.png");
+    height:auto; 
+    width: 1336px;
+}
+
