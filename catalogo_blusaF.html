@@ -7,6 +7,7 @@
         <link rel="icon" type="image/x-icon" src="img\favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\catalogo.css">
     </head>
     <body>
         <!--MENU E LOGO-->
@@ -15,19 +16,17 @@
             <div class="row container-nav">
                 <forms class="col-lg-4">
                     <input class="searchbar" type="search" name="searchbar">
-                    <button class="bt-searchbar"><img style="margin-top: 5px;
-                        width:28%;" class="bt-lupa" src="img\lupa.png" alt="buscar"></button>
+                    <button class="bt-searchbar"><img class="bt-lupa" src="img\lupa.png" alt="buscar"></button>
                 </forms>
                 <nav class="white col-lg-6">
-                    <a href="index.html" class="link bebas fonte-menu menu-link">Homepage</a>
+                    <a href="index.html" class="white link bebas fonte-menu menu-link">Homepage</a>
                     <button id="b-fem" class="link bebas fonte-menu menu-link" data-menu="0">Feminino</button>
                     <div id="m-fem" class="div-table-menu">
                         <table class="table-menu">
                             <tr>
-                                <th><a class="table-menu-cel" href="catalogo_vestido.html" target="_blank">Vestidos</a></th>
-                                <th><a class="table-menu-cel" href="catalogo_saia.html" target="_blank">Saias</a></th>
-                                <th><a class="table-menu-cel" href="catalogo_blusaF.html" target="_blank">Blusas</a></th>
-                            </tr>
+                                <th><a class="table-menu-cel" href="catalogo_vestido.html">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_saia.html">Saias</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaF.html">Blusas</a></th>
                         </table>
                     </div>
                     <button id="b-masc" class="link bebas fonte-menu menu-link" data-menu="1">Masculino</button>
@@ -58,67 +57,77 @@
                 </div>
             </div>
         </header>
-
-        <!--BANNER E CARDS-->
-        <main>
-            <!--BANNER-->
-            <div class="container">
-                <div class="div-banner centro">
-                    <img id="banner" class="img-fluid banner img-rounded" src="img\banner.png" alt="banner">
-                </div>
+        <main class="container">
+            <h3 class="title text-center">Blusas femininas</h3>
+            <div class="div-filtros text-center">
+                <button type="button" class="filtro" id="b-todas">Todas</button>
+                <button type="button" class="filtro" id="b-branca">brancas</button>
+                <button type="button" class="filtro" id="b-rosa">rosas</button>
+                <button type="button" class="filtro" id="b-preta">pretas</button>
+                <button type="button" class="filtro" id="b-azul">azuis</button>
+                <button type="button" class="filtro" id="b-amarela">amarelas</button>
             </div>
-            <div class="botoes-slide centro">
-                <center>
-                    <button id="b1-slide" class="botao-slide" type="button" data-n="0"></button>
-                    <button id="b2-slide" class="botao-slide" type="button" data-n="1"></button>
-                    <button id="b3-slide" class="botao-slide" type="button" data-n="2"></button>
-                </center>
+            <div class="row" width: 400px>
+                <picture class="col-lg-3 card" data-bl="pretas">
+                    <img class="roupa-foto" src="blusas femininas\blusa preta.jpg" alt="cropped preta com figura de urso azul no centro">
+                    <figcaption class="leg card-text text-center">
+                        <p>Blusa preta estampa urso</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="rosas">
+                    <img class="roupa-foto" src="blusas femininas\blusa rosa com morango.jpg" alt="blusa rosada com morangos e mangas bufantes">
+                    <figcaption class="leg card-text text-center">
+                        <p>Blusa rosa estampa morango</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="rosas">
+                    <img  class="roupa-foto" src="blusas femininas\blusa vermelha.jpg" alt="Cropped rosa com bolinhas brancas">
+                    <figcaption class="leg card-text text-center">
+                        <p>Cropped rosa com bolinhas</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="azuis">
+                    <img  class="roupa-foto" src="blusas femininas\blusa azul com nuvens.jpg" alt="Cropped azul com gola em 'v' e nuvens">
+                    <figcaption class="leg card-text text-center">
+                        <p>Blusa azul com nuvens</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
             </div>
-            <div>
-                <center>
-                    <button class="botao-categoria bebas fonte-menu" type="button">blusas</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">calças</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">vestidos</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">saias</button>
-                </center>
-            </div>
-
-            <!--CARDS DE PRODUTO-->
-            <div class="row cards-produtos">
-                <center>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/6EMeDY0-k-4CK6LdMaNQkK3KLRQ=/fit-in/215x312/static.dafiti.com.br/p/adidas-originals-camiseta-cropped-adidas-originals-logo-preta%252fbranca-8377-90577401-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Conjunto Amelie casual feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/6iHsejf3ixp_UnDuSgHjh68nwK8=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-camiseta-lan%25c3%25a7a-perfume-logo-preta-1565-70696401-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Saia La Sain't formal feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/Yiwi4sjOtzSXYwFJRWhQh_tBgs4=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-blusa-lan%25c3%25a7a-perfume-color-block-canelada-preta%252fbranca-7258-73243301-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Blusa Lemon casual feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                </center>
-            </div>
+            <div class="row" width: 400px>
+                <picture class="col-lg-3 card" data-bl="amarelas">
+                    <img class="roupa-foto" src="blusas femininas\blusa amarela alcinha.jpg" alt="Cropped amarelo com alças azuis">
+                    <figcaption class="leg card-text text-center">
+                        <p>Blusa amarela alcinha</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="azuis">
+                    <img class="roupa-foto" src="blusas femininas\blusa ciano.jpg" alt="Cropped ciano com lacinho">
+                    <figcaption class="leg card-text text-center">
+                        <p>Cropped ciano</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="brancas">
+                    <img class="roupa-foto" src="blusas femininas\blusa arco-isis.jpg" alt="Cropped branca com arco-íris">
+                    <figcaption class="leg card-text text-center">
+                        <p>Cropped arco-íris</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="brancas">
+                    <img class="roupa-foto" src="blusas femininas\blusa borboleta.jpg" alt="Cropped branca com borboletas">
+                    <figcaption class="leg card-text text-center">
+                        <p>Cropped borboletas</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
             </div>
         </main>
-
-        <!--RODAPÉ-->
         <footer class="rodape">
             <center>
                 <div class="container footer-div">
@@ -155,20 +164,20 @@
                         <adress>
                             <div>
                                 <img class="inline footer-contato-icon" src="img\pequena.png">
-                                <p class="inline link-footer-hover">Salvador, BA, 42833-000</p>
+                                <p class="inline">Salvador, BA, 42833-000</p>
                             </div>
                             <div>
                                 <img class="inline footer-contato-icon" src="img\email.png">
-                                <a href="mailto:navarro@gmail.com" target="_blank" class="inline link-footer-hover">navarro@gmail.com</a>
+                                <a href="mailto:navarro@gmail.com" target="_blank" class="inline">navarro@gmail.com</a>
                             </div>
                             <div>
                                 <img class="inline footer-contato-icon" src="img\phone.png">
-                                <a href="tel:7198865-9972" target="_blank" class="inline link-footer-hover">(71)99878-5545</a>
+                                <a href="tel:7198865-9972" target="_blank" class="inline">(71)99878-5545</a>
                             </div>
                             <div>
                                 <img class="inline footer-contato-icon" src="img\wpp.png">
                                 <a href="http://api.whatsapp.com/send?1=pt_BR&phone=7198865-9972" target="_blank"
-                                    class="inline link-footer-hover">(71)98865-9972 </a>
+                                    class="inline">(71)98865-9972 </a>
                             </div>
                         </adress>
                     </div>
@@ -186,7 +195,7 @@
                 <p>© 2021 Copyright: navarro.com</p>
             </div>
         </footer>
-        <script src="js\script.js">
-        </script>
+        <script src="js\script.js"></script>
+        <script src="js\catalogo.js"></script>
     </body>
 </html>

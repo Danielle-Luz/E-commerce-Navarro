@@ -17,7 +17,9 @@ a:hover, a:visited, a:link, a{
 }
 a:hover{
     text-decoration: none;
-    color: #3d71e2;
+}
+li a:hover{
+    color: #1e479d;
 }
 input:focus{
     border: none;
@@ -28,12 +30,14 @@ input:focus{
     font-family: "Gotica Moderna KK";
     font-size: 8em;
 }
+.white{
+    color: #fff;
+}
 .menu-link{
     display: inline-block;
     margin: 0 10px;
     border-right: 3px solid #1e479d;
     padding-right: 20px;
-    
 }
 .searchbar{
     max-width: 100%;
@@ -42,6 +46,16 @@ input:focus{
     height: 5vh;
     border-radius: 20px;
     border: none;
+}
+.bt-searchbar{
+    position: absolute; 
+    left: 80%; 
+    background-color: transparent; 
+    border: none;
+}
+.bt-lupa{
+    margin-top: 5px;
+    width:28%;
 }
 .nav-links{
     max-width: 100%;
@@ -88,6 +102,7 @@ input:focus{
     background-color:white; 
     width:65%; 
     position: absolute; 
+    color: black;
     border-radius: 20px;
 }
 .table-menu{
@@ -99,6 +114,9 @@ input:focus{
     border-left: 3px solid #df9908; 
     color:#1b1b1b; 
     display: block;
+}
+.table-menu-cel:hover{
+    color: #1e479d;
 }
 
 /*BANNER*/
@@ -190,6 +208,9 @@ input:focus{
 .footer-icon{
     width: 3%;
 }
+.footer-icon:hover{
+    opacity: 0.5;
+}
 .div-footer-icons{
     margin-top:20px;
 }
@@ -203,6 +224,9 @@ input:focus{
 .footer-contato-icon{
     margin: 0 8px 0 5px;
 }
+.link-footer-hover:hover{
+    color: #1e479d;
+}
 .div-copywright{
     width: 100%;
     margin-top: 10px;
@@ -211,12 +235,5 @@ input:focus{
 }
 .div-copywright p{
     color: white;
-}
-
-
-.bn{
-    background-image: url("https://i.imgur.com/INRmNwZ.png");
-    height:auto; 
-    width: 1336px;
 }
 

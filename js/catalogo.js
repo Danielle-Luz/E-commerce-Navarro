@@ -1,9 +1,12 @@
-b_rosa=document.getElementById("b-rosa");
-b_branca=document.getElementById("b-branca");
-b_rosa.onclick=function(){filtrar(b_rosa)};
-b_branca.onclick=function(){filtrar(b_branca)};
+const cards=document.querySelectorAll(".card");
+const botoes=document.querySelectorAll(".filtro");
+b_todas=document.getElementById("b-todas");
+
+for(let i=0;i<botoes.length;i++){
+    botoes[i].onclick=function(){filtrar(botoes[i])};
+}
+
 function filtrar(botao){
-    const cards=document.querySelectorAll(".card");
     for(let y=0;y<cards.length;y++){
         if(cards[y].getAttribute("data-bl")!=botao.textContent){
             cards[y].style.display="none";
@@ -12,5 +15,9 @@ function filtrar(botao){
         }
     }
 }
-
-alert(b_rosa.textContent);
+function mostrarTodas(){
+    for(let i=0;i<cards.length;i++){
+        cards[i].style.display="block";
+    }
+}
+b_todas.onclick=mostrarTodas;
