@@ -1,5 +1,8 @@
 /*FONTES*/
-@import url(https://fonts.google.com/specimen/Bebas+Neue);
+@font-face{
+    font-family: "bebas neue";
+    src: url("https://fonts.google.com/specimen/Bebas+Neue");
+}
 @font-face{
     font-family: "Gotica Moderna KK";
     src: url("Gotica Moderna KK v1.1.ttf");
@@ -9,6 +12,10 @@
 body{
     margin: 0;
     overflow-x:hidden;
+}
+
+.card-inline{
+    display: inline-block;
 }
 
 a:hover, a:visited, a:link, a{

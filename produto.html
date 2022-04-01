@@ -3,10 +3,109 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navarro</title>
+        <title>Navarro | Produto</title>
         <link rel="icon" type="image/x-icon" src="img\icons\favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css\style.css">
+        <style>
+            /*depois vou colocar num css externo*/
+            .img-lateral{
+                width: 70px;
+                margin: 10% 0px;;
+                display: block;
+                background-color:#d1d1d1;
+                padding: 1px;
+            }
+            .img-principal{
+                width:400px;
+            }
+            .prod-info{
+                color: white;
+                display: block;
+            }
+            .prod-cont{
+                width: 90%;
+                display: flex;
+                justify-content: space-around;
+                margin: 5% 0px;
+            }
+            .nome-prod{
+                font-family: "bebas neue";
+                font-size: 20px;
+            }
+            .prod-preco{
+                font-weight: bold;
+                font-size: 50px;
+                color: #1e479d;
+                margin: 0px;
+                padding: 0px;
+            }
+            .preco-info{
+                opacity: 0.5;
+                font-size: 20px;
+                margin: 0px;
+                padding: 0px;
+            }
+            .div-img-cores{
+                margin: 10% 0%;
+            }
+            .img-cores{
+                display: inline-block;
+                width: 30px;
+            }
+            .b-tamanho{
+                border-radius: 20px;
+                border: 1px solid lightgray;
+                margin: 10px 0px;
+                background-color: transparent;
+                font-size: 13px;
+                font-family: arial;
+                padding: 5px 10px;
+            }
+            .b-tamanho:hover{
+                border-color: #252525;
+            }
+            .add-carrinho{
+                margin: 10% 0%;
+                display: inline-block;
+                color: white;
+                letter-spacing:1.5px;
+                font-size: 20px;
+                padding: 10px 15px;
+                background-color: #252525;
+            }
+            .add-carrinho:hover{
+                background-color: #1e479d;
+            }
+            .descricao-titulo{
+                font-size: 20px;
+            }
+            .descricao{
+                font-family: arial;
+                font-size: 12px;
+            }
+            .div-descricao{
+                border-left: 4px solid #1e479d;
+                padding: 0px 20px;
+            }
+            .icon-fav{
+                margin: 0% 5% 2%;
+                width: 10%;
+            }
+            .info-compra-titulo{
+                font-weight: bold;
+                display: inline-block;
+            }
+            .div-info-compra{
+                background-color: #ececec;
+                padding: 5px 40px;
+                border-radius: 20px;
+                font-size: 12px;
+                display: inline-block;
+                font-family: arial;
+                color: #252525;
+            }
+        </style>
     </head>
     <body>
         <!--MENU E LOGO-->
@@ -58,67 +157,51 @@
                 </div>
             </div>
         </header>
-
-        <!--BANNER E CARDS-->
-        <main>
-            <!--BANNER-->
-            <div class="container">
-                <div class="div-banner centro">
-                    <img id="banner" class="img-fluid banner img-rounded" src="img\banners\banner.png" alt="banner">
+        <main class="container">
+            <div class="row prod-cont">
+                <div class="col-lg-2">
+                    <img class="img-lateral img-rounded" src="" alt="" data-hover="img\blusa masc\camisa estampada.jpg">
+                    <img class="img-lateral img-rounded" src="" alt="" data-hover="img\blusa masc\camisa estampada.jpg">
+                    <img class="img-lateral img-rounded" src="" alt="" data-hover="img\blusa masc\camisa estampada.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-principal img-rounded" src="">
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="bebas nome-prod"></h2>
+                    <del class="preco-info bebas"></del>
+                    <p class="prod-preco bebas"></p>
+                    <p class="preco-info bebas"></p>
+                    <div class="div-botoes">
+                        <button class="b-tamanho" type="button">XS(PP)</button>
+                        <button class="b-tamanho" type="button">S(P)</button>
+                        <button class="b-tamanho" type="button">M(M)(</button>
+                        <button class="b-tamanho" type="button">L(G)</button>
+                        <button class="b-tamanho" type="button">XL(GG)</button>
+                    </div>
+                    <div class="div-descricao">
+                        <h3 class="bebas descricao-titulo">Descrição</h3>
+                        <p class="descricao"></p>
+                    </div>
+                    <div class="prod-info">
+                        <a class="text-center add-carrinho img-rounded bebas" href="#">Adicione ao carrinho</a>
+                        <a class="inline" href="#"><img class="icon-fav" src="img\icons\fav-sem-preenchimento.svg" alt="favorito"></a>
+                    </div>
+                    <div class="div-info-compra">
+                        <div class="info-retirada">
+                            <span><img src="img\icons\store.svg" alt="símbolo de uma loja"></span>
+                            <h5 class="info-compra-titulo">Retire na loja</h5>
+                            <p>Indique a Navarro mais próxima<br>no momento da compra e retire na loja</p>
+                        </div>
+                        <div class="info-retirada">
+                            <span><img src="img\icons\economizar.svg" alt="símbolo de um cadeado"></span>
+                            <h5 class="info-compra-titulo">Economia</h5>
+                            <p>Compras a patir de R$100 têm frete grátis</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="botoes-slide centro">
-                <center>
-                    <button id="b1-slide" class="botao-slide" type="button" data-n="0"></button>
-                    <button id="b2-slide" class="botao-slide" type="button" data-n="1"></button>
-                    <button id="b3-slide" class="botao-slide" type="button" data-n="2"></button>
-                </center>
-            </div>
-            <div>
-                <center>
-                    <button class="botao-categoria bebas fonte-menu" type="button">blusas</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">calças</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">vestidos</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">saias</button>
-                </center>
-            </div>
-
-            <!--CARDS DE PRODUTO-->
-            <div class="row cards-produtos">
-                <center>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/6EMeDY0-k-4CK6LdMaNQkK3KLRQ=/fit-in/215x312/static.dafiti.com.br/p/adidas-originals-camiseta-cropped-adidas-originals-logo-preta%252fbranca-8377-90577401-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Conjunto Amelie casual feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/6iHsejf3ixp_UnDuSgHjh68nwK8=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-camiseta-lan%25c3%25a7a-perfume-logo-preta-1565-70696401-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Saia La Sain't formal feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/Yiwi4sjOtzSXYwFJRWhQh_tBgs4=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-blusa-lan%25c3%25a7a-perfume-color-block-canelada-preta%252fbranca-7258-73243301-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Blusa Lemon casual feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                </center>
-            </div>
-            </div>
         </main>
-
-        <!--RODAPÉ-->
         <footer class="rodape">
             <center>
                 <div class="container footer-div">
@@ -186,7 +269,6 @@
                 <p>© 2021 Copyright: navarro.com</p>
             </div>
         </footer>
-        <script src="js\script.js">
-        </script>
+        <script src="js\produto.js"></script>
     </body>
 </html>
