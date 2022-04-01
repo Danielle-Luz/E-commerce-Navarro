@@ -10,9 +10,8 @@ for(let i=0;i<b_slide.length;i++){
 for(let i=0;i<b_gen.length;i++){
     b_gen[i].onclick=function () { mostrar(b_gen[i]) };
 }
-for(let i=0;i<menu_lista.length;i++){
-    menu_lista[i].onmouseleave= function () { ocultar(i) };
-}
+
+document.querySelector(".nav").onmouseleave= function(){ocultar()} ;
 
 function mudar(botao) {
     document.querySelector("#banner").setAttribute("src", imgs[botao.getAttribute("data-n")]);
@@ -20,9 +19,16 @@ function mudar(botao) {
 }
 function mostrar(botao) {
     menu_lista[botao.getAttribute("data-menu")].style.display = "block";
+    for(let i=0;i<menu_lista.length;i++){
+        if(i!=botao.getAttribute("data-menu")){
+            menu_lista[i].style.display="none";
+        }
+    }
 }
-function ocultar(n) {
-    menu_lista[n].style.display = "none";
+function ocultar() {
+    for(let i=0;i<menu_lista.length;i++){
+        menu_lista[i].style.display = "none";
+    }
 }
 setInterval(function () {
     document.querySelector("#banner").setAttribute("src", imgs[i]);

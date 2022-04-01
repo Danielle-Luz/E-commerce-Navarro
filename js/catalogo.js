@@ -1,4 +1,4 @@
-//selecionando elementos com base em classes e id
+//selecionando elementos com base em classes
 const cards=document.querySelectorAll(".card");
 const botoes=document.querySelectorAll(".filtro");
 const b_todas=document.getElementById("b-todas");
@@ -14,6 +14,7 @@ for(let i=0;i<imgs_lista.length;i++){
         localStorage.setItem("descricao",imgs_lista[i].getAttribute("data-descricao"));
         localStorage.setItem("titulo",imgs_lista[i].parentNode.querySelector("figcaption").querySelector(".prod-titulo").textContent);
         localStorage.setItem("preco",imgs_lista[i].parentNode.querySelector("figcaption").querySelector(".preco").textContent);
+        
     }
 }
 
@@ -24,7 +25,6 @@ for(let i=0;i<botoes.length;i++){
 
 //função de filtragem nos catálogos
 function filtrar(botao){
-    let contador=cards.length;
     for(let y=0;y<cards.length;y++){
         let valor=cards[y].getAttribute("data-bl");
         let lista=valor.split(" ");

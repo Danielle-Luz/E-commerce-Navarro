@@ -1,12 +1,5 @@
 /*FONTES*/
-@font-face{
-    font-family: "bebas neue";
-    src: url("https://fonts.google.com/specimen/Bebas+Neue");
-}
-@font-face{
-    font-family: "Gotica Moderna KK";
-    src: url("Gotica Moderna KK v1.1.ttf");
-}
+
 
 /*ALTERAÇÕES GLOBAIS*/
 body{
@@ -37,8 +30,9 @@ input:focus{
     font-family: "Gotica Moderna KK";
     font-size: 8em;
 }
-.white{
+.nav{
     color: #fff;
+    z-index: 1;
 }
 .menu-link{
     display: inline-block;
@@ -107,7 +101,7 @@ input:focus{
     box-shadow:0 0 20px black ;
     display: none; 
     background-color:white; 
-    width:65%; 
+    width:75%; 
     position: absolute; 
     color: black;
     border-radius: 20px;
