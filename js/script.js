@@ -4,6 +4,10 @@ const b_gen=document.querySelectorAll(".menu-link");
 const menu_lista=document.querySelectorAll(".div-table-menu");
 const b_slide=document.querySelectorAll(".botao-slide");
 
+const prod_interval=document.querySelector(".div-produtos-interval");
+const b1_interval=document.getElementById("b1-interval");
+const b2_interval=document.getElementById("b2-interval");
+
 for(let i=0;i<b_slide.length;i++){
     b_slide[i].onclick=function () { mudar(b_slide[i]) };
 }
@@ -37,3 +41,19 @@ setInterval(function () {
         i = 0;
     }
 },5000);
+
+var y=0;
+setInterval(function(){
+    if(y>=prod_interval.scrollWidth){
+        y=0;
+    }
+    prod_interval.scrollLeft=y;
+    y+=200;
+},3000);
+b1_interval.onclick=function(){
+    prod_interval.scrollLeft-=200;
+};
+b2_interval.onclick=function(){
+    y+=200;
+    prod_interval.scrollLeft=y;
+};

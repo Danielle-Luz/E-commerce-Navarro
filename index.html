@@ -7,6 +7,7 @@
         <link rel="icon" type="image/x-icon" src="img\icons\favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\catalogo.css">
     </head>
     <body>
         <!--MENU E LOGO-->
@@ -15,8 +16,7 @@
             <div class="row container-nav">
                 <forms class="col-lg-4">
                     <input class="searchbar" type="search" name="searchbar">
-                    <button class="bt-searchbar"><img style="margin-top: 5px;
-                        width:28%;" class="bt-lupa" src="img\icons\lupa.png" alt="buscar"></button>
+                    <button class="bt-searchbar"><img class="bt-lupa" src="img\icons\lupa.png" alt="buscar"></button>
                 </forms>
                 <nav class="nav col-lg-6">
                     <a href="index.html" class="link bebas fonte-menu menu-link">Homepage</a>
@@ -62,9 +62,9 @@
         <!--BANNER E CARDS-->
         <main>
             <!--BANNER-->
-            <div class="container">
+            <div>
                 <div class="div-banner centro">
-                    <img id="banner" class="img-fluid banner img-rounded" src="img\banners\banner.png" alt="banner">
+                    <img id="banner" class="img-fluid banner img-rounded" src="img\banners\banner.png" alt="banner dinâmico com imagens alternando">
                 </div>
             </div>
             <div class="botoes-slide centro">
@@ -76,45 +76,164 @@
             </div>
             <div>
                 <center>
-                    <button class="botao-categoria bebas fonte-menu" type="button">blusas</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">calças</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">vestidos</button>
-                    <button class="botao-categoria bebas fonte-menu" type="button">saias</button>
+                    <button onclick="document.location=''" class="botao-categoria bebas fonte-menu" type="button">blusas</button>
+                    <button onclick="document.location=''" class="botao-categoria bebas fonte-menu" type="button">calças</button>
+                    <button onclick="document.location='catalogo_vestido.html'" class="botao-categoria bebas fonte-menu" type="button">vestidos</button>
+                    <button onclick="document.location='catalogo_saia.html'" class="botao-categoria bebas fonte-menu" type="button">saias</button>
                 </center>
             </div>
 
-            <!--CARDS DE PRODUTO-->
-            <div class="row cards-produtos">
-                <center>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/6EMeDY0-k-4CK6LdMaNQkK3KLRQ=/fit-in/215x312/static.dafiti.com.br/p/adidas-originals-camiseta-cropped-adidas-originals-logo-preta%252fbranca-8377-90577401-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Conjunto Amelie casual feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/6iHsejf3ixp_UnDuSgHjh68nwK8=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-camiseta-lan%25c3%25a7a-perfume-logo-preta-1565-70696401-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Saia La Sain't formal feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card cartao col-lg-4">
-                        <img class="card-img-top"
-                            src="https://t-static.dafiti.com.br/Yiwi4sjOtzSXYwFJRWhQh_tBgs4=/fit-in/215x312/static.dafiti.com.br/p/lan%25c3%25a7a-perfume-blusa-lan%25c3%25a7a-perfume-color-block-canelada-preta%252fbranca-7258-73243301-2-product.jpg"
-                            alt="imagem de roupa">
-                        <figcaption class="card-body">
-                            <b><p class="card-text">Blusa Lemon casual feminino</p></b>
-                            <p class="card-text">R$59,90</p>
-                        </figcaption>
-                    </figure>
-                </center>
+            <!--BANNER ACIMA DOS CARDS-->
+            <center>
+                <div class="container row div-desconto-cima">
+                    <div class="col-lg-3 border-desconto">
+                        <img class="inline" src="img\icons\cartao.svg" alt="símbolo de cartão">
+                        <p>PARCELE EM</p>
+                        <p class="red-desconto">6X SEM JUROS</p>
+                    </div>
+                    <div class="col-lg-3 border-desconto">
+                        <img class="inline" src="img\icons\frete.svg" alt="símbolo de um carro">
+                        <p class="red-desconto">FRETE GRÁTIS</p>
+                        <p>ACIMA DE <b class="red-desconto">R$49</b></p>
+                    </div>
+                    <div class="col-lg-3 border-desconto">
+                        <img class="inline" src="img\icons\cupom.svg" alt="símbolo de um gift-card">
+                        <p class="red-desconto">CUPONS DE R$15</p>
+                        <p>AO FINALIZAR A COMPRA</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="inline" src="img\icons\desconto.svg" alt="símbolo de um cifrão">
+                        <p class="red-desconto">R$12 OFF</p>
+                        <p>NA SUA PRIMEIRA COMPRA</p>
+                    </div>
+                </div>
+            </center>
+            <div>
+                <div class="div-banner centro">
+                    <img class="img-fluid banner img-rounded" src="img\banners\banner-4.png" alt="banner com um retângulo central rotacionado com a palavra 'promo' dentro, um quadrado a esquerda com a foto de uma modelo negra com vestido amarelo e um outro quadrado a direita com a foto de uma modela asiática com casaco ciano">
+                </div>
             </div>
+            <center>
+                <div class="container row">
+                    <div class="col-lg-3 border-desconto">
+                        <h1>R$10 <small class="off">OFF</small></h1>
+                        <p>Compras acima de R$50</p>
+                    </div>
+                    <div class="col-lg-3 border-desconto" >
+                        <h1>R$25 <small class="off">OFF</small></h1>
+                        <p>Compras acima de R$100</p>
+                    </div>
+                    <div class="col-lg-3 border-desconto" >
+                        <h1>R$35 <small class="off">OFF</small></h1>
+                        <p>Compras acima de R$150</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h1>R$100 <small class="off">OFF</small></h1>
+                        <p>Compras acima de R$500</p>
+                    </div>
+                </div>
+            </center>
+
+            <!--CARDS DE PRODUTO-->
+            <div class="div-produtos-botoes">
+                <div class="div-produtos-interval">
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\blusas masc\camisa quadriculada vermelha frente.webp" data-laterais="img\blusas masc\camisa quadriculada vermelha atrás.webp,img\blusas masc\camisa quadriculada vermelha gola.webp,img\blusas masc\camisa quadriculada vermelha manga.webp" data-descricao="Cor: Quadriculado Vermelho<br>Estilo: Casual<br>Decote: Colarinho<br>Comprimento da Manga: Manga Comprida<br>Tipo de manga: Regular<br>Comprimento: Regular<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$44,10" data-parcelas="5x de R$7,37 sem juros">
+                            <img class="img-produto-interval" src="img\blusas masc\camisa quadriculada vermelha frente.webp">
+                            <figcaption>
+                                <p class="prod-titulo">Camisa Vermelha Quadriculada</p>
+                                <p class="preco text-left">R$36,87</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa arco iris frente.webp" data-laterais="img\blusa fem\blusa arco iris gola.webp,img\blusa fem\blusa arco iris atras.webp,img\blusa fem\blusa arco iris manga.webp" data-descricao="Cor: Branco<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$38,00" data-parcelas="5x de R$7,06 sem juros">
+                            <img class="img-produto-interval" src="img\blusa fem\blusa arco iris frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Cropped Listra Arco-Íris</p>
+                            <p class="preco text-left">R$35,30</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido preto transparente frente.webp" data-laterais="img\vestidos\vestido preto transparente atrás.webp,img\vestidos\vestido preto transparente bainha.webp,img\vestidos\vestido preto transparente cima.webp" data-descricao="Cor: Preto<br>Estilo: Boho<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Não estirável<br>Material: Malha" data-desconto="R$50,00" data-parcelas="5x de R$8,58 sem juros">
+                            <img class="img-produto-interval" src="img\vestidos\vestido preto transparente frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Vestido Preto Transparente Bordado</p>
+                            <p class="preco text-left">R$42,90</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido morango frente.webp" data-laterais="img\vestidos\vestido morango atrás.webp,img\vestidos\vestido morango bainha.webp,img\vestidos\vestido morango ziper.webp" data-descricao="Cor: Rosa<br>Estilo: Kawaii<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Médio<br>Tecido: Não estirável<br>Material: Poliéster" data-desconto="R$35,00" data-parcelas="5x de R$5,60 sem juros">
+                            <img class="img-produto-interval" src="img\vestidos\vestido morango frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Vestido Morangos Rosa Alça</p>
+                            <p class="preco text-left">R$28,00</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\saias\saia azul frente.webp" data-laterais="img\saias\saia azul atrás.webp,img\saias\saia azul bainha.webp,img\saias\saia azul topo.webp" data-descricao="Cor: Azul Bebê<br>Estilo: Casual<br>Cintura: Cintura Alta<br>Comprimento: Curto<br>Tecido: Não estirável<br>Revestimento: Forrado<br>Material: Algodão" data-desconto="R$31,90" data-parcelas="5x de R$5,32 sem juros">
+                            <img class="img-produto-interval" src="img\saias\saia azul frente.webp" alt="saia azul curta com corte na perna">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Saia Azul Curta</p>
+                            <p class="preco text-left">R$26,60</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa borboletas frente.webp" data-laterais="img\blusa fem\blusa borboletas atrás.webp,img\blusa fem\blusa borboletas borboleta.webp,img\blusa fem\blusa borboleta manga.webp" data-descricao="Cor: Branco<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$38,95" data-parcelas="5x de R$6,92 sem juros">
+                            <img class="img-produto-interval" src="img\blusa fem\blusa borboletas frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Cropped Borboletas Sem Mangas</p>
+                            <p class="preco text-left">R$34,60</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\blusas masc\blusa marrom frente.webp" data-laterais="img\blusas masc\blusa marrom atrás.webp,img\blusas masc\blusa marrom gola.webp,img\blusas masc\blusa marrom manga.webp" data-descricao="Cor: Marrom<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Regular<br>Tipo de manga: Regular<br>Comprimento: Regular<br>Tecido: Estiramento Leve<br>Material: Algodão" data-desconto="R$32,15" data-parcelas="5x de R$5,70 sem juros">
+                            <img class="img-produto-interval" src="img\blusas masc\blusa marrom frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Blusa Marrom Dinossauro</p>
+                            <p class="preco text-left">R$28,50</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\blusas masc\camisa girassol frente.webp" data-laterais="img\blusas masc\camisa girassol gola.webp,img\blusas masc\camisa girassol atrás.webp,img\blusas masc\camisa girassol botão.webp" data-descricao="Cor: Preto<br>Estilo: Casual<br>Decote: Colarinho<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Regular<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$50,70" data-parcelas="5x de R$9,00 sem juros">
+                            <img class="img-produto-interval" src="img\blusas masc\camisa girassol frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Camisa Girassóis</p>
+                            <p class="preco text-left">R$45,00</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido vermelho frente.webp" data-laterais="img\vestidos\vestido vermelho alça.webp,img\vestidos\vestido vermelho bainha.webp,img\vestidos\vestido vermelho ziper.webp" data-descricao="Cor: Vermelho<br>Estilo: Boho<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Não estirável<br>Material: Poliéster" data-desconto="R$33,00" data-parcelas="5x de R$5,18 sem juros">
+                            <img class="img-produto-interval" src="img\vestidos\vestido vermelho frente.webp">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Vestido Vermelho Boho Alça</p>
+                            <p class="preco text-left">R$25,90</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a class="link-produto" href="produto.html" data-principal="img\saias\saia vermelha quadriculada.webp" data-laterais="img\saias\saia vermelha quadriculada trás.webp,img\saias\saia vermelha quadriculada topo.webp,img\saias\saia vermelha quadriculada ziper.webp" data-descricao="Cor: Vermelho Quadriculado<br>Estilo: Formal<br>Cintura: Natural<br>Comprimento: Curto<br>Tecido: Não Estirável<br>Revestimento: Forrado<br>Material: Algodão" data-desconto="R$54,80" data-parcelas="5x de R$8,71 sem juros">
+                            <img class="img-produto-interval" src="img\saias\saia vermelha quadriculada.webp" alt="saia vermelha quadriculada'">
+                        </a>
+                        <figcaption>
+                            <p class="prod-titulo">Saia Vermelha Quadriculada</p>
+                            <p class="preco text-left">R$43,55</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <center>
+                    <div class="botoes-produtos-interval">
+                        <button class="botao-slide" id="b1-interval" type="button"></button>
+                        <button class="botao-slide" id="b2-interval" type="button"></button>
+                    </div>
+                </center>
             </div>
         </main>
 
@@ -186,7 +305,8 @@
                 <p>© 2021 Copyright: navarro.com</p>
             </div>
         </footer>
-        <script src="js\script.js">
-        </script>
+        <script src="js\script.js"></script>
+        <script src="js\produto.js"></script>
+        <script src="js\catalogo.js"></script>
     </body>
 </html>

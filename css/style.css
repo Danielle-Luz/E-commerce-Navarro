@@ -3,14 +3,16 @@
 
 /*ALTERAÇÕES GLOBAIS*/
 body{
+    overflow-x: hidden;
+    font-family: calibri;
+    font-weight: bold;
     margin: 0;
-    overflow-x:hidden;
 }
-
-.card-inline{
-    display: inline-block;
+p{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
 }
-
 a:hover, a:visited, a:link, a{
     text-decoration: none;
     color: inherit;
@@ -103,7 +105,7 @@ input:focus{
     background-color:white; 
     width:75%; 
     position: absolute; 
-    color: black;
+    color: #1b1b1b;
     border-radius: 20px;
 }
 .table-menu{
@@ -115,6 +117,7 @@ input:focus{
     border-left: 3px solid #df9908; 
     color:#1b1b1b; 
     display: block;
+    font-size: 1.2em;
 }
 .table-menu-cel:hover{
     color: #1e479d;
@@ -124,7 +127,7 @@ input:focus{
 .div-banner{
     max-width: 80%;
     width: 80%;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 .banner{
     max-width: 100%;
@@ -160,8 +163,50 @@ input:focus{
     background-color:#1e479d;
     color: #fff;
 }
-.cards-produtos{
-    padding: 50px 0px;
+/*CARDS*/
+.img-produto-interval{
+    width: 15em;
+    margin-right: 2em;
+    border-radius: 10px;
+}
+.div-produtos-botoes{
+    width: 100%;
+    margin: 5% 0;
+}
+.div-produtos-interval{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    width: 60em;
+    margin: 0 auto;
+}
+.botoes-produtos-interval{
+    margin: 0 auto;
+}
+#b1-interval, #b2-interval{
+    width: 10%;
+}
+#b1-interval:hover, #b2-interval:hover{
+    width: 12%;
+}
+.div-desconto-cima{
+    background-color: rgb(231, 231, 231);
+    padding: 1.5em 0;
+    border-radius: 20px;
+}
+.off{
+    background-color: black;
+    color:white;
+    padding: 1% 5%;
+    border-radius: 20px;
+}
+.border-desconto{
+    border-right: 2px solid rgb(233, 233, 233);
+}
+.red-desconto{
+    color: rgb(25, 25, 97);
+    font-size: 1.2em;
+    margin: 0;
 }
 
 /*RODAPÉ*/
