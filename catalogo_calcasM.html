@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navarro | Calças Masculinas</title>
+        <link rel="icon" type="image/x-icon" src="img\favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\catalogo.css">
+    </head>
+    <body>
+        <!--MENU E LOGO-->
+        <header class="container">
+            <div class="logo text-center"><a href="index.html">navarro</a></div>
+            <div class="row container-nav">
+                <forms class="col-lg-4">
+                    <input class="searchbar" type="search" name="searchbar">
+                    <button class="bt-searchbar"><img class="bt-lupa" src="img\lupa.png" alt="buscar"></button>
+                </forms>
+                <nav class="white col-lg-6">
+                    <a href="index.html" class="white link bebas fonte-menu menu-link">Homepage</a>
+                    <button id="b-fem" class="link bebas fonte-menu menu-link" data-menu="0">Feminino</button>
+                    <div id="m-fem" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="catalogo_vestido.html" target="_self">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_saia.html" target="_self">Saias</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaF.html" target="_self">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-masc" class="link bebas fonte-menu menu-link" data-menu="1">Masculino</button>
+                    <div id="m-masc" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="catalogo_bermudasM.html" target="_self">Bermudas</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_calcasM.html" target="_self">Calças</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaM.html" target="_self">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-nb" class="link bebas fonte-menu menu-link" data-menu="2">Unissex</button>
+                    <div id="m-nb" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Calças</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                </nav>
+                <div class="col-lg-2 carrinho-lista">
+                    <a href="#"><img class="icon" src="img\user.png" alt="login"></a>
+                    <a href="#"><img class="icon" src="img\icon-bag.png" alt="carrinho"></a>
+                    <a href="#"><img class="icon" src="img\icon-lista.png" alt="lista de desejos"></a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <h3 class="title text-center">Calças Masculinas</h3>
+            <div class="div-filtros text-center">
+                <button type="button" class="filtro" id="b-todas">Todas</button>
+                <button type="button" class="filtro" id="b-molet">moletons</button>
+                <button type="button" class="filtro" id="b-quadric">jeans</button>
+                <button type="button" class="filtro" id="b-preta">cargo</button>
+                <button type="button" class="filtro" id="b-marrons">jogger</button>
+            </div>
+            <div class="row" width: 400px>
+                <picture class="col-lg-3 card" data-bl="jeans">
+                    <img class="roupa-foto" src="img/calcas_m/jeans_marmorizado/jeansm_frente.jpg" alt="calça jeans skinny marmorizado">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Jeans Marmorizado</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="jeans">
+                    <img class="roupa-foto" src="img/calcas_m/jeans_rasgos/jeansr_frente.jpg" alt="jeans com rasgos no joelho">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Jeans Rasgos</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="jogger">
+                    <img  class="roupa-foto" src="img/calcas_m/jogger_jeans/joggerj_frente.jpg" alt="calça jogger jeans">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Jogger Jeans</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="moletons">
+                    <img class="roupa-foto" src="img/calcas_m/moletom/moletom_frente.jpg" alt="calça moletom azul lisa">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Moletom Azul Lisa</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+            </div>
+            <div class="row" width: 400px>
+                <picture class="col-lg-3 card" data-bl="jogger">
+                    <img class="roupa-foto" src="img/calcas_m/jogger_bolsos/joggerb_frente.jpg" alt="calça jogger com bolsos">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça jogger com Bolsos</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="jogger">
+                    <img class="roupa-foto" src="img/calcas_m/jogger_esportiva/joggere_frente.jpg" alt="calça jogger esportiva">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Jogger Esportiva</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="jogger">
+                    <img class="roupa-foto" src="img/calcas_m/jogger_sherpa/joggers_frente.jpg" alt="calça jogger sherpa">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Jogger Sherpa</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+                <picture class="col-lg-3 card" data-bl="cargo">
+                    <img class="roupa-foto" src="img/calcas_m/cargo/cargo_frente.jpg" alt="calça cargo">
+                    <figcaption class="leg card-text text-center">
+                        <p>Calça Cargo</p>
+                        <p class="preco leg">R$45,50</p>
+                    </figcaption>
+                </picture>
+            </div>
+        </main>
+        <footer class="rodape">
+            <center>
+                <div class="container footer-div">
+                    <h3 class="bebas titulo-ofertas">ofertas no e-mail</h3>
+                    <forms>
+                        <input class="input-altura footer-input-text forms-background" type="email" name="inscrição">
+                        <button class="bebas botao-ofertas forms-background" type="button">Inscreva-se</button>
+                    </forms>
+                </div>
+            </center>
+            <center>
+                <div class="row centro">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">quem somos</h3>
+                        <p>
+                            Com sede na Bahia,<br>a Navarro é uma empresa brasileira que se dedica a<br>trazer moda e roupas
+                            de qualidade<br>para todo o país.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Parceiros</h3>
+                        <ul class="ul-padding-zero">
+                            <li><a href="https://br.shein.com/" target="_blank">Shein</a></li>
+                            <li><a href="https://www.zaful.com/" target="_blank">Zaful</a></li>
+                            <li><a href="https://www.bershka.com/" target="_blank">Bershka</a></li>
+                            <li><a href="https://www.zara.com/br/" target="_blank">Zara</a></li>
+                            <li><a href="https://www.prettylittlething.com/" target="_blank">Pretty Little Thing</a></li>
+                            <li><a href="https://www.forever21.com/" target="_blank">Forever 21</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Contato</h3>
+                        <adress>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\pequena.png">
+                                <p class="inline">Salvador, BA, 42833-000</p>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\email.png">
+                                <a href="mailto:navarro@gmail.com" target="_blank" class="inline">navarro@gmail.com</a>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\phone.png">
+                                <a href="tel:7198865-9972" target="_blank" class="inline">(71)99878-5545</a>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\wpp.png">
+                                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=7198865-9972" target="_blank"
+                                    class="inline">(71)98865-9972 </a>
+                            </div>
+                        </adress>
+                    </div>
+                </div>
+                <div class="div-footer-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img class="footer-icon" src="img\insta.png"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="img\fb.png"
+                            alt="facebook"></a>
+                    <a href="https://goo.gl/maps/VtZ64DC5GRAuqfNh8" target="_blank"><img class="footer-icon"
+                            src="img\local.png" alt="twitter"></a>
+                </div>
+            </center>
+            <div class="div-copywright text-center">
+                <p>© 2021 Copyright: navarro.com</p>
+            </div>
+        </footer>
+        <script src="js\script.js"></script>
+        <script src="js\catalogo.js"></script>
+    </body>
+</html>

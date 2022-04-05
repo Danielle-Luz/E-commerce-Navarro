@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+}
+.img-lateral{
+    width: 70px;
+    margin: 10% 0px;;
+    display: block;
+    background-color:#d1d1d1;
+    padding: 1px;
+}
+.img-principal{
+    width:400px;
+}
+.prod-info{
+    color: white;
+    display: block;
+}
+.prod-cont{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0px;
+}
+.nome-prod{
+    font-family: "bebas neue";
+    font-size: 20px;
+}
+.prod-preco{
+    font-weight: bold;
+    font-size: 50px;
+    color: #1e479d;
+    margin: 0px;
+    padding: 0px;
+}
+.preco-info{
+    opacity: 0.5;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.div-img-cores{
+    margin: 10% 0%;
+}
+.img-cores{
+    display: inline-block;
+    width: 30px;
+}
+.b-tamanho{
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    margin: 10px 0px;
+    background-color: transparent;
+    font-size: 13px;
+    font-family: arial;
+    padding: 5px 10px;
+}
+.b-tamanho:hover{
+    border-color: #252525;
+}
+.add-carrinho{
+    margin: 10% 0%;
+    display: inline-block;
+    color: white;
+    letter-spacing:1.5px;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #252525;
+}
+.add-carrinho:hover{
+    background-color: #1e479d;
+}
+.descricao-titulo{
+    font-size: 20px;
+}
+.descricao{
+    font-family: arial;
+    font-size: 12px;
+}
+.div-descricao{
+    border-left: 4px solid #1e479d;
+    padding: 0px 20px;
+}
+.icon-fav{
+    margin: 0% 5% 2%;
+    width: 10%;
+}
+.info-compra-titulo{
+    font-weight: bold;
+    display: inline-block;
+}
+.div-info-compra{
+    background-color: #ececec;
+    padding: 5px 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    font-family: arial;
+    color: #252525;
+}

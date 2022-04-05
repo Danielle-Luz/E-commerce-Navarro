@@ -1,0 +1,285 @@
+/*FONTES*/
+
+
+/*ALTERAÇÕES GLOBAIS*/
+body{
+    overflow-x: hidden;
+    font-family: calibri;
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+a:hover, a:visited, a:link, a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+}
+li a:hover{
+    color: #1e479d;
+}
+input:focus{
+    border: none;
+}
+
+/*MENU*/
+.logo{
+    font-family: "Gotica Moderna KK";
+    font-size: 8em;
+}
+.nav{
+    color: #fff;
+    z-index: 1;
+}
+.menu-link{
+    display: inline-block;
+    margin: 0 10px;
+    border-right: 3px solid #1e479d;
+    padding-right: 20px;
+}
+.searchbar{
+    max-width: 100%;
+    width: 100%;
+    max-height: 5vh;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+}
+.bt-searchbar{
+    position: absolute; 
+    left: 80%; 
+    background-color: transparent; 
+    border: none;
+}
+.bt-lupa{
+    margin-top: 5px;
+    width:28%;
+}
+.nav-links{
+    max-width: 100%;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+    transition: font-size 0.30s ease-in;
+    background-color: transparent;
+    border: none;
+    border-right: 3px solid #1e479d;
+    padding: 0 15px;
+}
+.link:hover{
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container-nav{
+    background-color: #252525;
+        padding: 20px;
+    border-radius: 20px;
+}
+.bebas{
+    font-family: "bebas neue";
+}
+.fonte-menu{
+    font-size: 1.7em;
+    color: #fff;
+}
+.icon{
+    max-width: 20%;
+    width: 20%;
+}
+.centro{
+    margin: 0 auto;
+}
+
+/*MENUS FLUTUANTES*/
+.div-table-menu{
+    box-shadow:0 0 20px black ;
+    display: none; 
+    background-color:white; 
+    width:75%; 
+    position: absolute; 
+    color: #1b1b1b;
+    border-radius: 20px;
+}
+.table-menu{
+    width: 100%; 
+    margin: 5%;
+}
+.table-menu-cel{
+    padding: 10px; 
+    border-left: 3px solid #df9908; 
+    color:#1b1b1b; 
+    display: block;
+    font-size: 1.2em;
+}
+.table-menu-cel:hover{
+    color: #1e479d;
+}
+
+/*BANNER*/
+.div-banner{
+    max-width: 80%;
+    width: 80%;
+    margin: 20px auto;
+}
+.banner{
+    max-width: 100%;
+    width: 100%;
+}
+.botoes-slide{
+    width: 35%;
+}
+.botao-slide{
+    width: 25%;
+    height: 1vh;
+    margin: 0 5px 0 5px;
+    border: none;
+    background-color: #252525;
+    border-radius: 20px;
+    transition: width 0.30s ease;
+}
+.botao-slide:hover{
+    background-color:#1e479d;
+    width: 30%;
+}
+.botao-categoria{
+    width: 15%;
+    padding: 25px;
+    margin: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:#252525;
+    transition: font-size 0.30s ease-out;
+}
+.botao-categoria:hover{
+    font-size: 2em;
+    background-color:#1e479d;
+    color: #fff;
+}
+/*CARDS*/
+.img-produto-interval{
+    width: 15em;
+    margin-right: 2em;
+    border-radius: 10px;
+}
+.div-produtos-botoes{
+    width: 100%;
+    margin: 5% 0;
+}
+.div-produtos-interval{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    width: 60em;
+    margin: 0 auto;
+}
+.botoes-produtos-interval{
+    margin: 0 auto;
+}
+#b1-interval, #b2-interval{
+    width: 10%;
+}
+#b1-interval:hover, #b2-interval:hover{
+    width: 12%;
+}
+.div-desconto-cima{
+    background-color: rgb(231, 231, 231);
+    padding: 1.5em 0;
+    border-radius: 20px;
+}
+.off{
+    background-color: black;
+    color:white;
+    padding: 1% 5%;
+    border-radius: 20px;
+}
+.border-desconto{
+    border-right: 2px solid rgb(233, 233, 233);
+}
+.red-desconto{
+    color: rgb(25, 25, 97);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/*RODAPÉ*/
+.rodape{
+    background-color:#252525;
+}
+.footer-div{
+    width: 70%;
+}
+.titulo-ofertas{
+    font-size: 2.5em;
+    color: #fff;
+}
+.botao-ofertas{
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+.botao-ofertas:hover{
+    opacity: 0.5;
+}
+.footer-input-text{
+    width: 60%;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    height: 2.4em;
+    border-radius: 20px;
+}
+.forms-background{
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+}
+.footer-div-info{
+    border-left: 3px solid #df9908;
+    padding: 0px 10px;
+    text-align: left;
+    color: white;
+    margin-left: 10px;
+}
+.footer-info-titulo{
+    font-family:"bebas neue";
+    color: white;
+    margin: 0 auto;
+}
+.footer-icon{
+    width: 3%;
+}
+.footer-icon:hover{
+    opacity: 0.5;
+}
+.div-footer-icons{
+    margin-top:20px;
+}
+.ul-padding-zero{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.inline{
+    display: inline;
+}
+.footer-contato-icon{
+    margin: 0 8px 0 5px;
+}
+.link-footer-hover:hover{
+    color: #1e479d;
+}
+.div-copywright{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #1b1b1b;
+}
+.div-copywright p{
+    color: white;
+}
+

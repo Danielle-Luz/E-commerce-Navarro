@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navarro | Vestidos</title>
+        <link rel="icon" type="image/x-icon" src="img\icons\favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\catalogo.css">
+    </head>
+    <body>
+        <!--MENU E LOGO-->
+        <header class="container">
+            <div class="logo text-center"><a href="index.html">navarro</a></div>
+            <div class="row container-nav">
+                <forms class="col-lg-4">
+                    <input class="searchbar" type="search" name="searchbar">
+                    <button class="bt-searchbar"><img class="bt-lupa" src="img\icons\lupa.png" alt="buscar"></button>
+                </forms>
+                <nav class="nav col-lg-6">
+                    <a href="index.html" class="link bebas fonte-menu menu-link">Homepage</a>
+                    <button id="b-fem" class="link bebas fonte-menu menu-link" data-menu="0">Feminino</button>
+                    <div id="m-fem" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="catalogo_vestido.html" target="_self">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_saia.html" target="_self">Saias</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaF.html" target="_self">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-masc" class="link bebas fonte-menu menu-link" data-menu="1">Masculino</button>
+                    <div id="m-masc" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="catalogo_bermudasM.html" target="_self">Bermudas</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_calcasM.html" target="_self">Calças</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaM.html" target="_self">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-nb" class="link bebas fonte-menu menu-link" data-menu="2">Unissex</button>
+                    <div id="m-nb" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Calças</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                </nav>
+                <div class="col-lg-2 carrinho-lista">
+                    <a href="#"><img class="icon" src="img\icons\user.png" alt="login"></a>
+                    <a href="#"><img class="icon" src="img\icons\icon-bag.png" alt="carrinho"></a>
+                    <a href="#"><img class="icon" src="img\icons\icon-lista.png" alt="lista de desejos"></a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <h3 class="title text-center">Vestidos</h3>
+            <div class="div-filtros text-center">
+                <button type="button" class="filtro" id="b-todas">Todos</button>
+                <button type="button" class="filtro" id="b-branca">brancos</button>
+                <button type="button" class="filtro" id="b-rosa">rosas</button>
+                <button type="button" class="filtro" id="b-verdes">verdes</button>
+                <button type="button" class="filtro" id="b-preta">pretos</button>
+                <button type="button" class="filtro" id="b-azul">azuis</button>
+                <button type="button" class="filtro" id="b-verm">vermelhos</button>
+                <button type="button" class="filtro" id="b-estamp">estampados</button>
+                <button type="button" class="filtro" id="b-estamp">floridos</button>
+            </div>
+            <div class="row">
+                <figure class="col-lg-3 card" data-bl="azuis floridos">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido azul lacinho.webp" data-laterais="img\vestidos\vestido azul lacinho atrás.webp,img\vestidos\vestido azul lacinho frente.webp,img\vestidos\vestido azul lacinho manga.webp" data-descricao="Cor: Azul Bebê<br>Estilo: Cottagecore<br>Decote: Coração<br>Comprimento da Manga: Manga Média<br>Tipo de manga: Manga Bufante<br>Comprimento: Médio<br>Tecido: Não estirável<br>Material: Algodão" data-desconto="R$35,00" data-parcelas="5x de R$5,10 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido azul lacinho.webp" alt="vestido azul de manga com florzinhas">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Azul Florido Mangas</p>
+                        <p class="preco leg">R$25,50</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="verdes">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido verde mangas.jpg" data-laterais="img\vestidos\vestido verde lacinho atrás.webp,img\vestidos\vestido verde lacinho bainha.webp,img\vestidos\vestido verde lacinho manga.webp" data-descricao="Cor: Verde Oliva<br>Estilo: Cottagecore<br>Decote: Coração<br>Comprimento da Manga: Manga Média<br>Tipo de manga: Manga Bufante<br>Comprimento: Médio<br>Tecido: Não estirável<br>Material: Algodão" data-desconto="R$35,00" data-parcelas="5x de R$5,00 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido verde mangas.jpg" alt="vestido verde com mangas">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Verde Florido Mangas</p>
+                        <p class="preco leg">R$25,00</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="pretos">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido preto los frente.webp" data-laterais="img\vestidos\vestido preto los atrás.webp,img\vestidos\vestido preto los manga.webp,img\vestidos\vestido preto los nome.webp" data-descricao="Cor: Preto<br>Estilo: Ocasional<br>Decote: Redondo<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Alongamento médio<br>Material: Poliéster" data-desconto="R$40,00" data-parcelas="5x de R$6,00 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido preto los frente.webp" alt="Vestido preto com escrita 'los angeles'">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Preto Casual Alça</p>
+                        <p class="preco leg">R$30,00</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="pretos floridos">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido preto transparente frente.webp" data-laterais="img\vestidos\vestido preto transparente atrás.webp,img\vestidos\vestido preto transparente bainha.webp,img\vestidos\vestido preto transparente cima.webp" data-descricao="Cor: Preto<br>Estilo: Boho<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Não estirável<br>Material: Malha" data-desconto="R$50,00" data-parcelas="5x de R$8,58 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido preto transparente frente.webp" alt="vestido preto transparente bordado">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Preto Transparente Bordado</p>
+                        <p class="preco leg">R$42,90</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="col-lg-3 card" data-bl="rosas estampados">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido morango frente.webp" data-laterais="img\vestidos\vestido morango atrás.webp,img\vestidos\vestido morango bainha.webp,img\vestidos\vestido morango ziper.webp" data-descricao="Cor: Rosa<br>Estilo: Kawaii<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Médio<br>Tecido: Não estirável<br>Material: Poliéster" data-desconto="R$35,00" data-parcelas="5x de R$5,60 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido morango frente.webp" alt="vestido com estampas de morango">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Morangos Rosa Alça</p>
+                        <p class="preco leg">R$28,00</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="estampados rosas brancos">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido borboleta frente.webp" data-laterais="img\vestidos\vestido borboleta atrás.webp,img\vestidos\vestido borboleta bainha.webp,img\vestidos\vestido borboleta alça.webp" data-descricao="Cor: Multicolorido<br>Estilo: Tie-Dye<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manfa<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Alongamento Médio<br>Material: Poliéster" data-desconto="R$50,00" data-parcelas="5x de R$8,70 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido borboleta frente.webp" alt="vestido estampado com borboletas">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Borboletas Multicolorido Alça</p>
+                        <p class="preco leg">R$43,50</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="brancos">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido quadriculado frente.webp" data-laterais="img\vestidos\vestido quadriculado alça.webp,img\vestidos\vestido quadriculado atrás.webp,img\vestidos\vestido quadriculado tecido.webp" data-descricao="Cor: Branco Quadriculado<br>Estilo: Casual<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Estiramento leve<br>Material: Poliéster" data-desconto="R$50,00" data-parcelas="5x de R$8,00 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido quadriculado frente.webp" alt="Vestido branco quadriculado">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Quadriculado Casual Alça</p>
+                        <p class="preco leg">R$40,00</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="vermelhos">
+                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido vermelho frente.webp" data-laterais="img\vestidos\vestido vermelho alça.webp,img\vestidos\vestido vermelho bainha.webp,img\vestidos\vestido vermelho ziper.webp" data-descricao="Cor: Vermelho<br>Estilo: Boho<br>Decote: Gola em V<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Não estirável<br>Material: Poliéster" data-desconto="R$33,00" data-parcelas="5x de R$5,18 sem juros">
+                        <img class="roupa-foto" src="img\vestidos\vestido vermelho frente.webp" alt="Vestido vermelho de alcinhas">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Vestido Vermelho Boho Alça</p>
+                        <p class="preco leg">R$25,90</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer class="rodape">
+            <center>
+                <div class="container footer-div">
+                    <h3 class="bebas titulo-ofertas">ofertas no e-mail</h3>
+                    <forms>
+                        <input class="input-altura footer-input-text forms-background" type="email" name="inscrição">
+                        <button class="bebas botao-ofertas forms-background" type="button">Inscreva-se</button>
+                    </forms>
+                </div>
+            </center>
+            <center>
+                <div class="row centro">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">quem somos</h3>
+                        <p>
+                            Com sede na Bahia,<br>a Navarro é uma empresa brasileira que se dedica a<br>trazer moda e roupas
+                            de qualidade<br>para todo o país.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Parceiros</h3>
+                        <ul class="ul-padding-zero">
+                            <li><a href="https://br.shein.com/" target="_blank">Shein</a></li>
+                            <li><a href="https://www.zaful.com/" target="_blank">Zaful</a></li>
+                            <li><a href="https://www.bershka.com/" target="_blank">Bershka</a></li>
+                            <li><a href="https://www.zara.com/br/" target="_blank">Zara</a></li>
+                            <li><a href="https://www.prettylittlething.com/" target="_blank">Pretty Little Thing</a></li>
+                            <li><a href="https://www.forever21.com/" target="_blank">Forever 21</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Contato</h3>
+                        <adress>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\pequena.png">
+                                <p class="inline">Salvador, BA</p>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\email.png">
+                                <a href="mailto:navarro@gmail.com" target="_blank" class="inline">navarro@gmail.com</a>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\phone.png">
+                                <a href="tel:7198865-9972" target="_blank" class="inline">(71)99878-5545</a>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\wpp.png">
+                                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=7198865-9972" target="_blank"
+                                    class="inline">(71)98865-9972 </a>
+                            </div>
+                        </adress>
+                    </div>
+                </div>
+                <div class="div-footer-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img class="footer-icon" src="img\icons\insta.png"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="img\icons\fb.png"
+                            alt="facebook"></a>
+                    <a href="https://goo.gl/maps/VtZ64DC5GRAuqfNh8" target="_blank"><img class="footer-icon"
+                            src="img\icons\local.png" alt="twitter"></a>
+                </div>
+            </center>
+            <div class="div-copywright text-center">
+                <p>© 2021 Copyright: navarro.com</p>
+            </div>
+        </footer>
+        <script src="js\script.js"></script>
+        <script src="js\catalogo.js"></script>
+    </body>
+</html>

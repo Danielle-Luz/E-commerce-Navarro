@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+/*     font-size: 1.2em; */
+}
+.box{
+    margin-bottom: 0;
+    border: 150px 300px 0px 300px;
+    padding: 15% 20% 10% 20%;
+    position: auto;
+    text-align: center;  
+}
+.box h1{
+    font-weight: 900;
+    font-size: 4em;
+}
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background-color: rgb(238, 238, 238);
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 100px;
+    width: auto;
+/*     transition: 0.25px; */
+}
+/* .box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 365px;
+} */
+.box input[type="text"]:hover, .box input[type="password"]:hover{
+    width: 365px;
+    border-color: #000000;
+}
+.box input[type="submit"]{
+    color: white;
+    border: 0;
+    background-color: #1b1b1b;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 100px;
+/*     width: auto; */
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    width: 270px;
+    text-align: center;
+    border-color: #000000;
+}
+
+.box-cad{
+    width: auto;
+    margin-top: 0;
+    border: 150px 350px 350px 350px;
+    padding: 5% 15% 10% 15%;
+    position: auto;
+    text-align: center;  
+}
+.box-cad h1{
+    font-weight: 900;
+    font-size: 3em;
+}
+.box-cad input[type="text"], .box-cad input[type="password"]{
+    border: 0;
+    background-color: rgb(238, 238, 238);
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 75px;
+    width: auto;
+/*     transition: 0.25px; */
+}
+/* .box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 365px;
+} */
+.box-cad input[type="text"]:hover, .box-cad input[type="password"]:hover{
+    width: 315px;
+    border-color: #000000;
+}
+.box-cad input[type="submit"]{
+    color: white;
+    border: 0;
+    background-color: #1b1b1b;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 75px;
+/*     width: auto; */
+    cursor: pointer;
+}
+.box-cad input[type="submit"]:hover{
+    width: 215px;
+    text-align: center;
+    border-color: #000000;
+}

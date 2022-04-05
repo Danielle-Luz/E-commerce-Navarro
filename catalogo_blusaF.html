@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navarro | Blusas Femininas</title>
+        <link rel="icon" type="image/x-icon" src="img\icons\favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\catalogo.css">
+    </head>
+    <body>
+        <!--MENU E LOGO-->
+        <header class="container">
+            <div class="logo text-center"><a href="index.html">navarro</a></div>
+            <div class="row container-nav">
+                <forms class="col-lg-4">
+                    <input class="searchbar" type="search" name="searchbar">
+                    <button class="bt-searchbar"><img class="bt-lupa" src="img\icons\lupa.png" alt="buscar"></button>
+                </forms>
+                <nav class="nav col-lg-6">
+                    <a href="index.html" class="link bebas fonte-menu menu-link">Homepage</a>
+                    <button id="b-fem" class="link bebas fonte-menu menu-link" data-menu="0">Feminino</button>
+                    <div id="m-fem" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="catalogo_vestido.html" target="_self">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_saia.html" target="_self">Saias</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaF.html" target="_self">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-masc" class="link bebas fonte-menu menu-link" data-menu="1">Masculino</button>
+                    <div id="m-masc" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="catalogo_bermudasM.html" target="_self">Bermudas</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_calcasM.html" target="_self">Calças</a></th>
+                                <th><a class="table-menu-cel" href="catalogo_blusaM.html" target="_self">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="b-nb" class="link bebas fonte-menu menu-link" data-menu="2">Unissex</button>
+                    <div id="m-nb" class="div-table-menu">
+                        <table class="table-menu">
+                            <tr>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Vestidos</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Calças</a></th>
+                                <th><a class="table-menu-cel" href="#" target="_blank">Blusas</a></th>
+                            </tr>
+                        </table>
+                    </div>
+                </nav>
+                <div class="col-lg-2 carrinho-lista">
+                    <a href="#"><img class="icon" src="img\icons\user.png" alt="login"></a>
+                    <a href="#"><img class="icon" src="img\icons\icon-bag.png" alt="carrinho"></a>
+                    <a href="#"><img class="icon" src="img\icons\icon-lista.png" alt="lista de desejos"></a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <h3 class="title text-center">Blusas femininas</h3>
+            <div class="div-filtros text-center">
+                <button type="button" class="filtro" id="b-todas">Todas</button>
+                <button type="button" class="filtro" id="b-branca">brancas</button>
+                <button type="button" class="filtro" id="b-rosa">rosas</button>
+                <button type="button" class="filtro" id="b-preta">pretas</button>
+                <button type="button" class="filtro" id="b-azul">azuis</button>
+                <button type="button" class="filtro" id="b-amarela">amarelas</button>
+            </div>
+            <div class="row">
+                <figure class="col-lg-3 card" data-bl="azuis">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa ciano frente.webp" data-laterais="img\blusa fem\blusa ciano atrás.webp,img\blusa fem\blusa ciano laço.webp,img\blusa fem\blusa ciano manga.webp" data-descricao="Cor: Azul<br>Estilo: Casual<br>Decote: Gola Em V<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$31,70" data-parcelas="5x de R$4,91 sem juros">
+                        <img class="roupa-foto" src="img\blusa fem\blusa ciano frente.webp" alt="Cropped ciano com lacinho">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Cropped Azul Laço</p>
+                        <p class="preco leg">R$24,55</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="rosas">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa rosa maçã frente.webp" data-laterais="img\blusa fem\blusa rosa maçã atrás.webp,img\blusa fem\blusa rosa maçã gola.webp,img\blusa fem\blusa rosa maçã manga.webp" data-descricao="Cor: Rosa Bebê<br>Estilo: Kawaii<br>Decote: Quadrado<br>Comprimento da Manga: Curto<br>Tipo de manga: Sopro<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$31,99" data-parcelas="5x de R$5,46 sem juros">
+                        <img class="roupa-foto" src="img\blusa fem\blusa rosa maçã frente.webp" alt="blusa rosada com morangos e mangas bufantes">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Blusa Rosa Estampa Maçã</p>
+                        <p class="preco leg">R$27,30</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="vermelhas">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa vermelha frente.webp" data-laterais="img\blusa fem\blusa vermelha atrás.webp,img\blusa fem\blusa vermelha bainha.webp,img\blusa fem\blusa vermelha gola.webp" data-descricao="Cor: Vermelha<br>Estilo: Casual<br>Decote: Gola em V<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$35,99" data-parcelas="5x de R$5,60 sem juros">
+                        <img  class="roupa-foto" src="img\blusa fem\blusa vermelha frente.webp" alt="Cropped rosa com bolinhas brancas">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Cropped Vemelho Gola em V</p>
+                        <p class="preco leg">R$28,00</p>
+                    </figcaption>
+                </figure>
+                <!--ainda tô colocando os links a partir daqui-->
+                <figure class="col-lg-3 card" data-bl="azuis">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa azul nuvem frente.webp" data-laterais="img\blusa fem\blusa azul nuvem atrás.webp,img\blusa fem\blusa azul nuvem gola.webp,img\blusa fem\blusa azul nuvem manga.webp" data-descricao="Cor: Azul<br>Estilo: Kawaii<br>Decote: Gola em V<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$40,50" data-parcelas="5x de R$7,00 sem juros">
+                        <img  class="roupa-foto" src="img\blusa fem\blusa azul nuvem frente.webp" alt="Cropped azul com gola em 'v' e nuvens">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Cropped Azul Nuvens Sem Mangas</p>
+                        <p class="preco leg">R$34,00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="col-lg-3 card" data-bl="amarelas">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa amarela alcinha frente.webp" data-laterais="img\blusa fem\blusa amarela alcinha alça.webp,img\blusa fem\blusa amarela alcinha atrás.webp,img\blusa fem\blusa amarela alcinha gola.webp" data-descricao="Cor: Amarela<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$37,30" data-parcelas="5x de R$6,60 sem juros">
+                        <img class="roupa-foto" src="img\blusa fem\blusa amarela alcinha frente.webp" alt="Cropped amarelo com alças azuis"></a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Blusa Amarela Alcinha</p>
+                        <p class="preco leg">R$33,00</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="pretas">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa preta urso frente.webp" data-laterais="img\blusa fem\blusa preta urso gola.webp,img\blusa fem\blusa preta urso atrás.webp,img\blusa fem\blusa preta urso manga.webp" data-descricao="Cor: Preto<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Médio<br>Tipo de manga: Regular<br>Comprimento: Médio<br>Tecido: Estiramento Leve<br>Material: Algodão" data-desconto="R$30,00" data-parcelas="5x de R$5,00 sem juros">
+                        <img class="roupa-foto" src="img\blusa fem\blusa preta urso frente.webp" alt="cropped preta com figura de urso azul no centro"></a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Blusa Preta Estampa Urso</p>
+                        <p class="preco leg">R$25,00</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="brancas">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa arco iris frente.webp" data-laterais="img\blusa fem\blusa arco iris gola.webp,img\blusa fem\blusa arco iris atras.webp,img\blusa fem\blusa arco iris manga.webp" data-descricao="Cor: Branco<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$38,00" data-parcelas="5x de R$7,06 sem juros">
+                        <img class="roupa-foto" src="img\blusa fem\blusa arco iris frente.webp" alt="Cropped branca com arco-íris">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Cropped Listra Arco-Íris</p>
+                        <p class="preco leg">R$35,30</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-lg-3 card" data-bl="brancas">
+                    <a class="link-produto" href="produto.html" data-principal="img\blusa fem\blusa borboletas frente.webp" data-laterais="img\blusa fem\blusa borboletas atrás.webp,img\blusa fem\blusa borboletas borboleta.webp,img\blusa fem\blusa borboleta manga.webp" data-descricao="Cor: Branco<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$38,95" data-parcelas="5x de R$6,92 sem juros">
+                        <img class="roupa-foto" src="img\blusa fem\blusa borboletas frente.webp" alt="Cropped branca com borboletas">
+                    </a>
+                    <figcaption class="leg card-text text-center">
+                        <p class="prod-titulo">Cropped Borboletas Sem Mangas</p>
+                        <p class="preco leg">R$34,60</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer class="rodape">
+            <center>
+                <div class="container footer-div">
+                    <h3 class="bebas titulo-ofertas">ofertas no e-mail</h3>
+                    <forms>
+                        <input class="input-altura footer-input-text forms-background" type="email" name="inscrição">
+                        <button class="bebas botao-ofertas forms-background" type="button">Inscreva-se</button>
+                    </forms>
+                </div>
+            </center>
+            <center>
+                <div class="row centro">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">quem somos</h3>
+                        <p>
+                            Com sede na Bahia,<br>a Navarro é uma empresa brasileira que se dedica a<br>trazer moda e roupas
+                            de qualidade<br>para todo o país.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Parceiros</h3>
+                        <ul class="ul-padding-zero">
+                            <li><a href="https://br.shein.com/" target="_blank">Shein</a></li>
+                            <li><a href="https://www.zaful.com/" target="_blank">Zaful</a></li>
+                            <li><a href="https://www.bershka.com/" target="_blank">Bershka</a></li>
+                            <li><a href="https://www.zara.com/br/" target="_blank">Zara</a></li>
+                            <li><a href="https://www.prettylittlething.com/" target="_blank">Pretty Little Thing</a></li>
+                            <li><a href="https://www.forever21.com/" target="_blank">Forever 21</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 footer-div-info">
+                        <h3 class="footer-info-titulo">Contato</h3>
+                        <adress>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\pequena.png">
+                                <p class="inline">Salvador, BA</p>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\email.png">
+                                <a href="mailto:navarro@gmail.com" target="_blank" class="inline">navarro@gmail.com</a>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\phone.png">
+                                <a href="tel:7198865-9972" target="_blank" class="inline">(71)99878-5545</a>
+                            </div>
+                            <div>
+                                <img class="inline footer-contato-icon" src="img\icons\wpp.png">
+                                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=7198865-9972" target="_blank"
+                                    class="inline">(71)98865-9972 </a>
+                            </div>
+                        </adress>
+                    </div>
+                </div>
+                <div class="div-footer-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img class="footer-icon" src="img\icons\insta.png"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img class="footer-icon" src="img\icons\fb.png"
+                            alt="facebook"></a>
+                    <a href="https://goo.gl/maps/VtZ64DC5GRAuqfNh8" target="_blank"><img class="footer-icon"
+                            src="img\icons\local.png" alt="twitter"></a>
+                </div>
+            </center>
+            <div class="div-copywright text-center">
+                <p>© 2021 Copyright: navarro.com</p>
+            </div>
+        </footer>
+        <script src="js\script.js"></script>
+        <script src="js\catalogo.js"></script>
+    </body>
+</html>
