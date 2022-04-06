@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face{
+    font-family: "Gotica Moderna KK";
+    src: url("css/fontes/Gotica Moderna KK v1.1.ttf");
+}
 body{
     font-family: calibri;
 }
@@ -37,7 +41,7 @@ body{
         padding: 0.3rem !important;
     }
     .card-width figcaption{
-        display: none;
+        font-size: 0.6em;
     }
 }
 @media(max-width: 517px){
