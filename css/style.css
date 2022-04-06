@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@font-face{
-    font-family: "Gotica Moderna KK";
-    src: url("Gotica-Moderna-KK-v1.1.ttf") format("ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap');
 body{
     font-family: calibri;
 }
 .logo{
-    font-family: "Gotica Moderna KK";
-    font-size: 8em;
+    font-family: "Abril Fatface";
+    font-size: 400%;
 }
 .bg-dark{
     background-color: #252525;
@@ -98,6 +95,9 @@ body{
         margin-top:0;
     }
     .cards-p{
+        display: none;
+    }
+    .card-width figcaption{
         display: none;
     }
 }
