@@ -1,7 +1,7 @@
 /*MEDIAQUERY*/
 @media(max-width: 550px){
     .card-width figcaption{
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 }
 @media(max-width:991px){

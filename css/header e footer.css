@@ -1,11 +1,21 @@
 /*FONTES*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gotica-moderna-kk');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /*MEDIAQUERY*/
 @media(max-width: 767px){
     .rounded-pill{
         border-radius: 0!important;
+    }
+}
+@media(max-width: 565px){
+    .logo{
+        font-size: 4em !important;
+    }
+}
+@media(max-width: 360px){
+    .logo{
+        font-size: 3em !important;
     }
 }
 /*TAGS/PSEUDOCLASSES*/
@@ -26,8 +36,8 @@ body{
 
 /*CLASSES*/
 .logo{
-    font-family: "Gotica Moderna KK";
-    font-size: 8em;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
 }
 .bg-dark{
     background-color: #252525;

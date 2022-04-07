@@ -1,0 +1,14 @@
+@media(max-width:600px){
+    .fz-prod{
+        font-size: 3vw !important;
+    }
+}
+.fz-prod{
+    font-size: 1.5vw;
+}
+.img-principal{
+    max-width: 100%;
+}
+.img-lateral{
+    max-width: 20%;
+}
