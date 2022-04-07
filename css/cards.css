@@ -1,21 +1,35 @@
+
 /*MEDIAQUERY*/
-@media(max-width: 550px){
-    .card-width figcaption{
-        font-size: 0.7em;
-    }
-}
 @media(max-width:991px){
     .card-width{
         max-width: 30% !important;
         flex-shrink: 0;
     }
 }
+@media(max-width: 767px){
+    .card-width{
+        max-width: 30% !important;
+    }
+}
+
+@media(max-width: 550px){
+    .card-width figcaption{
+        font-size: 0.7em;
+    }
+}
+@media(max-width: 430px){
+    .card-width{
+        max-width: 50% !important;
+    }
+}
 @media(max-width:380px){
     .cards-p{
         display: none;
     }
-    .card-width figcaption{
-        display: none;
+}
+@media(max-width: 300px){
+    .card-width{
+        max-width: 80% !important;
     }
 }
 

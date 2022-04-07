@@ -1,5 +1,4 @@
 const imgs_lista=document.querySelectorAll(".link-produto");
-
 //guardando os valores dos atributos no armazenamento local
 for(let i=0;i<imgs_lista.length;i++){
     imgs_lista[i].onclick=function(){
