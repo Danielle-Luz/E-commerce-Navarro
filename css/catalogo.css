@@ -1,0 +1,9 @@
+.btn-outline-dark:hover{
+    color:#252525;
+    background-color: #d1d1d1 !important;
+}
+@media(max-width:524px){
+    .filtro{
+        font-size: 0.8em !important;
+    }
+}

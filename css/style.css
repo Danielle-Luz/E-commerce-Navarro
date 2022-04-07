@@ -1,44 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gotica-moderna-kk');
-body{
-    font-family: calibri;
-}
-.logo{
-    font-family: "Gotica Moderna KK";
-    font-size: 8em;
-}
-.bg-dark{
-    background-color: #252525;
-}
-.bebas{
-    font-family: "Bebas Neue";
-}
-.navbar{
-    font-size: 1.5em;
-}
-.round-tp-l{
-    border-top-left-radius: 50rem !important;
-    border-bottom-left-radius: 50rem !important;
-}
-.round-tp-r{
-    border-top-right-radius: 50rem !important;
-    border-bottom-right-radius: 50rem !important;
+/*MEDIAQUERY*/
+@media(max-width:991px){
+    .bg-light-gray{
+        background-color: transparent;
+    }
 }
 @media(max-width: 767px){
-    .rounded-pill{
-        border-radius: 0!important;
-    }
     .bg-light-gray p{
         font-size: 0.8em;
     }
 }
-
+@media(max-width:575px){
+    .fz-3{
+        font-size: 1.5em;
+    }
+}
 @media(max-width: 550px){
     .botao-slide{
         padding: 0.3rem !important;
-    }
-    .card-width figcaption{
-        font-size: 0.6em;
     }
 }
 @media(max-width: 517px){
@@ -46,44 +24,6 @@ body{
         font-size: 0.6em;
     }
 }
-.fz-1-5{
-    font-size: 1.2em;
-}
-
-.banner-rotativo button:hover{
-    background-color: #fba4c2 !important;
-}
-
-.bg-light-gray{
-    background-color: rgb(233,233,233);
-    font-weight: bold;
-}
-
-@media(max-width:991px){
-    .bg-light-gray{
-        background-color: transparent;
-    }
-    .card-width{
-        max-width: 30% !important;
-        flex-shrink: 0;
-    }
-}
-
-.card-width{
-    max-width: 20%;
-    flex-shrink: 0;
-}
-
-.fz-3{
-    font-size: 3em;
-}
-
-@media(max-width:575px){
-    .fz-3{
-        font-size: 1.5em;
-    }
-}
-
 @media(max-width:380px){
     .categorias{
         flex-direction:column;
@@ -94,19 +34,20 @@ body{
     .categorias button:first-child{
         margin-top:0;
     }
-    .cards-p{
-        display: none;
-    }
-    .card-width figcaption{
-        display: none;
-    }
+}
+
+/*CLASSES*/
+.banner-rotativo button:hover{
+    background-color: #fba4c2 !important;
+}
+
+.bg-light-gray{
+    background-color: rgb(233,233,233);
+    font-weight: bold;
+}
+.fz-3{
+    font-size: 3em;
 }
 .div-produtos-botoes figure{
     margin-right: 1rem;
-}
-.text-warning{
-    color: #f9f27d !important;
-}
-.hover-a:hover{
-    color: #fcbcd2 !important;
 }
