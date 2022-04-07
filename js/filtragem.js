@@ -1,6 +1,5 @@
 const botoes=document.querySelectorAll(".filtro");
 const b_todas=document.getElementById("b-todas");
-const imgs_lista=document.querySelectorAll(".link-produto");
 const cards=document.querySelectorAll(".card");
 
 //acionar filtragem em cada botão
