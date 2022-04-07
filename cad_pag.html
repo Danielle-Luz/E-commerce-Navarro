@@ -6,7 +6,7 @@
         <title>Login | Navarro</title>
         <link rel="icon" type="image/x-icon" src="img\icons\favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/log_pag.css">
+        <link rel="stylesheet" href="css/cad_pag.css">
         <link rel="stylesheet" href="css\style.css">
         <link rel="stylesheet" href="css\produto.css">
     </head>
@@ -61,21 +61,28 @@
         </header>
         <!-- FORMULÁRIO DE LOGIN -->
         <main class="container">
+            <div class="alert-box">
+                <img src="img/error.png" class="alert-img" alt="">
+                <p class="alert-msg">Mensagem de erro</p>
+            </div>
                 <center>
                     <div>
-                        <form class="box" action="log_pag.html" method="POST">
-                            <h1>LOGIN</h1>
-                            <input type="text" name="" placeholder="Usuário" id="username">
+                        <form class="box-cad" action="log_pag.html" method="POST">
+                            <h1>CADASTRO</h1>
+                            <input type="text" name="" placeholder="Usuário" id="user">
+                            <input type="text" name="" placeholder="Nome Completo" id="surname">
+                            <input type="email" name="" placeholder="E-mal" id="email">
                             <input type="password" name="" placeholder="Senha" id="password">
-                            <button class="submit-btn">Acessar</button>
-                            <!-- Utilizei uma function validate com valores pre definidos para o user e pass -->
+                            <input type="checkbox" name="Aceito os termos e condições" id="terms">
+                            <label for="terms">Aceito os termos e condições.</label>
+                            <button class="submit-btn" onclick="alerta()">Cadastrar</button>
                         </form>
                     </div>
-                <hr>
-                    <div class="cad">
-                        <a href="cad_pag.html">Ainda não possui conta? Faça o Cadastro</a>
+                    <hr>
+                    <div class="log">
+                        <a href="log_pag.html">Já possui conta? Faça Login</a>
                     </div>
-                </center>
+                  </center>
         </main>
         <footer class="rodape">
             <center>
@@ -144,6 +151,6 @@
                 <p>© 2021 Copyright: navarro.com</p>
             </div>
         </footer>
-        <script src="js/log_pag.js"></script>
+        <script src="js/cad_pag.js"></script>
     </body>
 </html>

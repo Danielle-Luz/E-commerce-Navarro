@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.box-cad{
+    margin: 0;
+    padding: 100px 100px 50px 100px;
+    position: auto;
+    text-align: center;   
+}
+.box-cad h1{
+    font-weight: 900;
+    font-size: 3em;
+}
+.box-cad input[type="text"], .box-cad input[type="password"]{
+    border: 0;
+    background-color: rgb(238, 238, 238);
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 75px;
+    width: auto;
+}
+.box-cad input[type="text"]:hover, .box-cad input[type="password"]:hover{
+    width: 315px;
+    border-color: #000000;
+}
+.box-cad input[type="email"]{
+    border: 0;
+    background-color: rgb(238, 238, 238);
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 75px;
+    width: auto;
+}
+.box-cad input[type="email"]:hover{
+    width: 315px;
+    border-color: #000000;
+}
+.box-cad input[type="text"]:hover, .box-cad input[type="password"]:hover{
+    width: 315px;
+    border-color: #000000;
+}
+.submit-btn{
+    color: white;
+    border: 0;
+    background-color: #1b1b1b;
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 20px;
+    padding: 10px 75px;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    width: 215px;
+    text-align: center;
+    border-color: #000000;
+}
+
+.log{
+    margin: 0;
+    padding: 0px 45px 20px 45px;
+    text-decoration: none;
+    font-size: 1.8em;
+    background-color: none;
+    text-align: center;
+}
+.alert-box{
+    width: 300px;
+    min-height: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba (0, 0, 0, 0.05);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.alert-box.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 60%;
+}
+.alert-img{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+.alert-msg{
+    color: #e24c4b;
+    font: 2em;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 900;
+}
