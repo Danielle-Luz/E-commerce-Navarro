@@ -81,3 +81,9 @@ body{
 .hover-a:hover{
     color: #fcbcd2 !important;
 }
+.form-label-sz{
+    font-size: 20px;
+}
+.rounded-3{
+    border-radius: 20px !important;
+}

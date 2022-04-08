@@ -54,17 +54,13 @@ for(let i=0;i<botoesEx.length;i++){
         location.reload();
     }
 }
-
-/*
-<figure class="col-lg-3 card" data-bl="azuis floridos">
-                    <a class="link-produto" href="produto.html" data-principal="img\vestidos\vestido azul lacinho.webp" data-laterais="img\vestidos\vestido azul lacinho atrás.webp,img\vestidos\vestido azul lacinho frente.webp,img\vestidos\vestido azul lacinho manga.webp" data-descricao="Cor: Azul Bebê<br>Estilo: Cottagecore<br>Decote: Coração<br>Comprimento da Manga: Manga Média<br>Tipo de manga: Manga Bufante<br>Comprimento: Médio<br>Tecido: Não estirável<br>Material: Algodão" data-desconto="R$35,00" data-parcelas="5x de R$5,10 sem juros">
-                        <img class="roupa-foto" src="img\vestidos\vestido azul lacinho.webp" alt="vestido azul de manga com florzinhas">
-                    </a>
-                    <figcaption class="leg card-text text-center">
-                        <p class="prod-titulo">Vestido Azul Florido Mangas</p>
-                        <p class="preco leg">R$25,50</p>
-                    </figcaption>
-                </figure>
-
-                
-*/
+function nenhumItem(){
+    let texto;
+    if(wish_prods.querySelector("figure")==null){
+        texto=document.createElement("p");
+        texto.textContent="Nenhum item aqui :)";
+        texto.setAttribute("class","text-center text-secondary");
+        wish_prods.appendChild(texto);
+    }
+}
+nenhumItem();

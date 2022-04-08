@@ -68,8 +68,16 @@
                         </li>
                     </ul>
                     <ul class="d-none d-sm-flex navbar-nav">
-                        <li class="nav-item">
-                            <a href="" class="nav-link"><span class="fas fa-user"></span></a>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown" data-bs-toggle="dropdown"><span class="fas fa-user"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="html\criar-conta.html" class="dropdown-item bebas">Criar conta</a>
+                                </li>
+                                <li>
+                                    <a href="html\login.html" class="bebas dropdown-item">Login</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="html\wishlist.html" class="nav-link"><span class="fas fa-heart"></span></a>
@@ -94,11 +102,12 @@
                     <button class="btn bg-dark botao-slide rounded-circle p-2 mx-1 mx-sm-3" type="button"></button>
                     <button class="btn bg-dark botao-slide rounded-circle p-2" type="button"></button>
                 </div>
+                <!--CATEGORIAS-->
                 <div class="container text-center my-5 fz-1-5 d-flex justify-content-center justify-content-sm-around categorias">
-                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5" type="button">bermudas</button>
-                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5 mx-2" type="button">calças</button>
-                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5" type="button">vestidos</button>
-                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5 ms-2" type="button">saias</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5" type="button" onclick="document.location='html/catalogo-bermudas.html'">bermudas</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5 mx-2" type="button" onclick="document.location='html/catalogo-calcas.html'">calças</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5" type="button" onclick="document.location='html/catalogo-vestidos.html'">vestidos</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5 ms-2" type="button" onclick="document.location='html/catalogo-saias.html'">saias</button>
                 </div>
             </div>
 
