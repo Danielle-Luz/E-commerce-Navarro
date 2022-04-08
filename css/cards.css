@@ -19,7 +19,7 @@
 }
 @media(max-width: 430px){
     .card-width{
-        max-width: 40% !important;
+        max-width: 30% !important;
     }
 }
 @media(max-width:380px){
