@@ -2,8 +2,8 @@
 function validate(){
     var username=document.getElementById("username").value;
     var password=document.getElementById("password").value;
-    if(username == "admin" && password == "admin"){
-        alert("Bem vindo Admin!");
+    if(username == localStorage.getItem("user") && password == localStorage.getItem("senha")){
+        alert("Bem vindo, "+localStorage.getItem("user")+"!");
     } else{
         alert("Usuário não encontrado. Faça o cadastro abaixo.");
     }

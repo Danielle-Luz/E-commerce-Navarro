@@ -1,5 +1,9 @@
 var prod_laterais=document.querySelectorAll(".img-lateral");
 
+//botão do carrinho
+const addCar=document.getElementById("carrinho");
+const tamanhos=document.querySelectorAll(".tamanho");
+var classe=tamanhos[0].getAttribute("class");
 //atribuição dos valores do card ao produto
 const produto=JSON.parse(sessionStorage.getItem("prod"));
 document.querySelector(".img-principal").setAttribute("src",produto.img_principal);
@@ -87,6 +91,50 @@ wis.onclick=function(){
                 }
             }
             cont++;
+        }
+    }
+}
+
+for(let i=0;i<tamanhos.length;i++){
+    tamanhos[i].onclick=function(){
+        tamanhos[i].setAttribute("class",classe+" active");
+        for(let x=0;x<tamanhos.length;x++){
+            if(tamanhos[x]!=tamanhos[i]){
+                tamanhos[x].setAttribute("class",classe);
+            }
+        }
+    }
+}
+
+addCar.onclick=function(){
+    externo:
+    for(let i=0;i<tamanhos.length;i++){ 
+        if(tamanhos[i].getAttribute("class")=="btn btn-outline-dark btn-sm fz-text tamanho active"){
+            let z=0;
+            let carrinho;
+            let obj=JSON.parse(sessionStorage.getItem("prod"));
+            let btTamanho=tamanhos[i].textContent;
+            obj["tamanho"]=btTamanho;
+            while(true){
+                carrinho="carrinho"+z;
+                if(localStorage.getItem(carrinho)==null){
+                    break;
+                }else if(JSON.parse(localStorage.getItem(carrinho)).titulo==obj.titulo && JSON.parse(localStorage.getItem(carrinho)).tamanho==obj.tamanho){
+                    alert("Produto já adicionado ao carrinho.");
+                    break externo;
+                }
+                z++;
+            }
+            localStorage.setItem(carrinho,JSON.stringify(obj));
+            if(localStorage.getItem("contCar")==null){
+                localStorage.setItem("contCar",0);
+            }else{
+                localStorage.setItem("contCar",parseInt(localStorage.getItem("contCar"))+1);
+            }
+            alert("Produto adicionado ao carrinho!");
+            break;
+        }else if(i==(tamanhos.length-1)){
+            alert("Escolha um tamanho.");
         }
     }
 }
