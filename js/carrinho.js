@@ -105,7 +105,7 @@ for(let i=0;i<menos.length;i++){
             input=menos[i].parentNode.querySelector(".input-quant").value;
             let preco=menos[i].parentNode.parentNode.parentNode.querySelector(".preco").textContent.slice(2);
             totais[i].textContent="R$"+((parseFloat(input)*parseFloat(preco)).toFixed(2));
-            subtotal.textContent="R$"+((parseFloat(subtotal.textContent.slice(3))-parseFloat(preco)).toFixed(2));
+            subtotal.textContent="R$"+((parseFloat(subtotal.textContent.slice(2))-parseFloat(preco)).toFixed(2));
         }
     }
 }
@@ -116,7 +116,7 @@ for(let i=0;i<mais.length;i++){
         input=mais[i].parentNode.querySelector(".input-quant").value;
         let preco=menos[i].parentNode.parentNode.parentNode.querySelector(".preco").textContent.slice(2);
         totais[i].textContent="R$"+((parseFloat(input)*parseFloat(preco)).toFixed(2));
-        subtotal.textContent="R$"+((parseFloat(subtotal.textContent.slice(3))+parseFloat(preco)).toFixed(2));
+        subtotal.textContent="R$"+((parseFloat(subtotal.textContent.slice(2))+parseFloat(preco)).toFixed(2));
     }
 }
 for(let i=0;i<btnClose.length;i++){
