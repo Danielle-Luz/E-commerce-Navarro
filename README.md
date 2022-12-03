@@ -13,6 +13,10 @@
     • <a href="#Desenvolvedora">Desenvolvedora</a>
 </p>
 
+<p align="center">
+   <img src="https://media.giphy.com/media/eqRMUlttENiW6GXaYk/giphy.gif" alt="gif mostrando o funcionamento da loja" /> 
+</p>
+
 <h2 id="Como acessar"> :computer_mouse: Como acessar?</h2>
 
 Confira e utilize o projeto no <a href="https://danielle-luz.github.io/E-commerce-Navarro/">github pages</a>.
